@@ -1,0 +1,553 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>漫画家网站</title>
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="css/content.css" rel="stylesheet" type="text/css"/>
+<link href="css/con_person2.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".button").click(function(){
+  $(".menu").toggle();
+  });
+});
+</script>
+
+<!--中文版-->
+<script type="text/javascript" src="js/pagenav1.1.cn.js"></script>
+<script type="text/javascript">
+
+//$(function(){ //for jquery
+window.onload = (function(){
+
+	//optional set
+	pageNav.pre="上一页";
+	pageNav.next="下一页";
+	
+
+	 //  p,当前页码,pn,总页面
+	pageNav.fn = function(p,pn){
+		document.getElementById("test").innerHTML ="当前页:"+p+"  ,  总页: "+pn;
+		//$("#test").text("Page:"+p+" of "+pn + " pages."); // jquery调用方式
+	};
+	
+	//重写分页状态,跳到第三页,总页33页
+	pageNav.go(3,5);
+
+});
+
+  </script>
+</head>
+
+<body>
+<div class="page">
+<header id="header">
+	<div class="content">
+		<div class="header_top">
+        	<ul>
+            	<li><a href="#">登录</a></li>
+                <li><a href="#">换肤</a></li>
+                <li><a href="#">我的观看记录</a></li>
+                <li><a href="#">支持漫画家</a></li>
+                <li><a href="#">个人中心</a></li>
+            </ul>
+            <div class="clear"></div>
+            <div class="header_top_con">
+            	<img src="img/logo.png" class="logo">
+                <img src="img/wenzi.png" class="wenzi">
+                <a href="#" class="chongzhi">点击充值</a>
+            </div>	
+            <div class="clear"></div>
+            <div class="header_top_bot">
+            	<p>漫画家共有6232部漫画供您欣赏 还在不断增加哦<span><a href="#">作品上传</a><a href="#">作者PRQ</a></span><div class="clear"></div></p>
+            </div>
+        </div>
+        <div class="header_bottom">
+        	<nav class="nav">
+            	<ul class="button">
+                	<li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="menu">
+                	<li><a href="index.html">首页</a></li>
+                    <li><a href="manhua.html">漫画</a></li>
+                    <li><a href="person.html">漫画家</a></li>
+                    <li><a href="cos.html">COS</a></li>
+                    <li><a href="huihua.html">绘画</a></li>
+                    <li><a href="teach.html">教程</a></li>
+                    <li><a href="huodong.html">活动</a></li>
+                    <li><a href="meitu.html">美图</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <form action="#" method="post" name="search" id="search">
+            	<input type="text" id="text">
+                <input type="button" id="but" value="搜索">
+            </form>	
+            <div class="clear"></div>
+        </div>
+    </div>
+</header>
+<div id="main">
+    <div class="content">
+        <ul>
+        	<li>
+            	<div class="li_left">
+                	<h2>A</h2>
+                </div>
+                <div class="li_right">
+                	<a href="#">
+                        <p>Aldnoah Zero</p>
+                        <span>共9篇</span>
+                    </a>
+                    <a href="#">
+                        <p>爱丽丝:疯狂回归</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>爱丽丝梦游仙境</p>
+                        <span>共7篇</span>
+                    </a>
+                    <a href="#">
+                        <p>安德的游戏</p>
+                        <span>共2篇</span>
+                    </a>
+                    <a href="#">
+                        <p>暗黑者</p>
+                        <span>共37篇</span>
+                    </a>
+                    <a href="#">
+                        <p>暗杀教室</p>
+                        <span>共48篇</span>
+                    </a>
+                    <a href="#">
+                        <p>暗芝居</p>
+                        <span>共8篇</span>
+                    </a>
+                    <a href="#">
+                        <p>澳门风云</p>
+                        <span>共15篇</span>
+                    </a>
+                </div>
+                <div class="clear"></div
+            </li>
+            <li>
+            	<div class="li_left">
+                	<h2>B</h2>
+                </div>
+                <div class="li_right">
+                	<a href="#">
+                        <p>BROTHERS CONFLICT</p>
+                        <span>共3篇</span>
+                    </a>
+                    <a href="#">
+                        <p>Bloodline</p>
+                        <span>共2篇</span>
+                    </a>
+                    <a href="#">
+                        <p>白雪公主和七个小矮人</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>巴拉拉小魔仙</p>
+                        <span>共5篇</span>
+                    </a>
+                    <a href="#">
+                        <p>梹虎</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>宝莲灯</p>
+                        <span>共9篇</span>
+                    </a>
+                    <a href="#">
+                        <p>蝙蝠侠与罗宾</p>
+                        <span>共1篇</span>
+                    </a><a href="#">
+                        <p>变形金刚</p>
+                        <span>共37篇</span>
+                    </a>
+                    <a href="#">
+                        <p>飙速宅男</p>
+                        <span>共60篇</span>
+                    </a>
+                    <a href="#">
+                        <p>话里话里</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>冰果</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>冰雪奇缘</p>
+                        <span>共8篇</span>
+                    </a>
+                    <a href="#">
+                        <p>薄暮传说</p>
+                        <span>共5篇</span>
+                    </a>
+                    <a href="#">
+                        <p>博物馆奇妙夜</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>薄樱鬼</p>
+                        <span>共16篇</span>
+                    </a>
+                    <a href="#">
+                        <p>不可思议的游戏</p>
+                        <span>共7篇</span>
+                    </a>
+                    <a href="#">
+                        <p>不一样的美男</p>
+                        <span>共1篇</span>
+                    </a>
+                </div>
+                <div class="clear"></div
+            </li>
+            <li>
+            	<div class="li_left">
+                	<h2>C</h2>
+                </div>
+                <div class="li_right">
+                	<a href="#">
+                        <p>CLANNAD</p>
+                        <span>共2篇</span>
+                    </a>
+                    <a href="#">
+                        <p>Code Geass 反叛的鲁路修</p>
+                        <span>共6篇</span>
+                    </a>
+                    <a href="#">
+                        <p>苍穹之法芙娜</p>
+                        <span>共8篇</span>
+                    </a>
+                    <a href="#">
+                        <p>长安幻夜</p>
+                        <span>共5篇</span>
+                    </a>
+                    <a href="#">
+                        <p>超次元游戏 海王星</p>
+                        <span>共3篇</span>
+                    </a>
+                    <a href="#">
+                        <p>超能陆战队</p>
+                        <span>共8篇</span>
+                    </a>
+                    <a href="#">
+                        <p>潮语虎</p>
+                        <span>共2篇</span>
+                    </a>
+                    <a href="#">
+                        <p>超值游戏</p>
+                        <span>共1篇</span>
+                    </a><a href="#">
+                        <p>晟世青风</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>晨曦公主</p>
+                        <span>共3篇</span>
+                    </a>
+                    <a href="#">
+                        <p>陈月之钥</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>虫师</p>
+                        <span>共3篇</span>
+                    </a>
+                    <a href="#">
+                        <p>传说中勇者的传说</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>穿越西元3000后</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>楚留香传奇</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>刺客信条</p>
+                        <span>共10篇</span>
+                    </a>
+                    <a href="#">
+                        <p>刺客信条4</p>
+                        <span>共12篇</span>
+                    </a>
+                    <a href="#">
+                        <p>刺客信条5</p>
+                        <span>共5篇</span>
+                    </a>
+                </div>
+                <div class="clear"></div
+            </li>
+            <li>
+            	<div class="li_left">
+                	<h2>D</h2>
+                </div>
+                <div class="li_right">
+                	<a href="#">
+                        <p>DC漫画</p>
+                        <span>共6篇</span>
+                    </a>
+                    <a href="#">
+                        <p>Deemo</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>大海原于大海原</p>
+                        <span>共2篇</span>
+                    </a>
+                    <a href="#">
+                        <p>蛋糕无语</p>
+                        <span>共19篇</span>
+                    </a>
+                    <a href="#">
+                        <p>贪玩伦坡</p>
+                        <span>共6篇</span>
+                    </a>
+                    <a href="#">
+                        <p>刀剑乱舞</p>
+                        <span>共344篇</span>
+                    </a>
+                    <a href="#">
+                        <p>刀剑神域</p>
+                        <span>共2篇</span>
+                    </a>
+                    <a href="#">
+                        <p>盗墓笔记</p>
+                        <span>共1283篇</span>
+                    </a>
+                    <a href="#">
+                        <p>道士下山</p>
+                        <span>共6篇</span>
+                    </a>
+                    <a href="#">
+                        <p>狄仁杰之神都龙王</p>
+                        <span>共4篇</span>
+                    </a>
+                    <a href="#">
+                        <p>地狱少女</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>东京残响</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>东京猫猫</p>
+                        <span>共2篇</span>
+                    </a>
+                    <a href="#">
+                        <p>东京食尸鬼</p>
+                        <span>共55篇</span>
+                    </a>
+                    <a href="#">
+                        <p>多啦A梦</p>
+                        <span>共1篇</span>
+                    </a>
+                </div>
+                <div class="clear"></div
+            </li>
+            <li>
+            	<div class="li_left">
+                	<h2>E</h2>
+                </div>
+                <div class="li_right">
+                	<a href="#">
+                        <p>Ensemble Star</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>恶魔之谜</p>
+                        <span>共11篇</span>
+                    </a>
+                </div>
+                <div class="clear"></div
+            </li>
+            <li>
+            	<div class="li_left">
+                	<h2>F</h2>
+                </div>
+                <div class="li_right">
+                	<a href="#">
+                        <p>Fate/Apocrypha</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>HOT </p>
+                        <span>共54篇</span>
+                    </a>
+                    <a href="#">
+                        <p>Free！男子游泳</p>
+                        <span>共136篇</span>
+                    </a>
+                    <a href="#">
+                        <p>房东是魔王大人</p>
+                        <span>共6篇</span>
+                    </a>
+                    <a href="#">
+                        <p>Fate/Zero</p>
+                        <span>共4篇</span>
+                    </a>
+                    <a href="#">
+                        <p>风起苍岚</p>
+                        <span>共3篇</span>
+                    </a>
+                    <a href="#">
+                        <p>风声</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>复仇者联盟</p>
+                        <span>共11篇</span>
+                    </a>
+                </div>
+                <div class="clear"></div
+            </li>
+            <li>
+            	<div class="li_left">
+                	<h2>G</h2>
+                </div>
+                <div class="li_right">
+                	<a href="#">
+                        <p>GANGSTA匪徒</p>
+                        <span>共4篇</span>
+                    </a>
+                    <a href="#">
+                        <p>钢琴师</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>钢之炼金术</p>
+                        <span>共36篇</span>
+                    </a>
+                    <a href="#">
+                        <p>高智能方程式</p>
+                        <span>共1篇</span>
+                    </a>
+                    <a href="#">
+                        <p>革命机</p>
+                        <span>共2篇</span>
+                    </a>
+                    <a href="#">
+                        <p>歌之王子殿下</p>
+                        <span>共3篇</span>
+                    </a>
+                    <a href="#">
+                        <p>怪盗</p>
+                        <span>共4篇</span>
+                    </a>
+                    <a href="#">
+                        <p>乖离性百万亚瑟王</p>
+                        <span>共27篇</span>
+                    </a>
+                    <a href="#">
+                        <p>灌篮高手</p>
+                        <span>共38篇</span>
+                    </a>
+                    <a href="#">
+                        <p>鬼灯的冷器</p>
+                        <span>共34篇</span>
+                    </a>
+                    <a href="#">
+                        <p>鬼畜眼镜</p>
+                        <span>共31篇</span>
+                    </a>
+                    <a href="#">
+                        <p>古剑奇谭</p>
+                        <span>共33篇</span>
+                    </a>
+                    <a href="#">
+                        <p>古剑奇谭2</p>
+                        <span>共198篇</span>
+                    </a>
+                    <a href="#">
+                        <p>古剑奇谭1</p>
+                        <span>共258篇</span>
+                    </a>
+                    <a href="#">
+                        <p>古书堂事件</p>
+                        <span>共1篇</span>
+                    </a>
+                </div>
+                <div class="clear"></div
+            </li>
+        </ul>
+    </div>
+    <div class="fenye">
+		<div id="pageNav"></div>
+    </div>
+</div>
+<footer id="footer">
+	<div class="footer_top">
+		<div class="content">
+        	<ul class="footer_top_one">
+            	<li><a href="#">爱情漫画</a></li>
+                <li><a href="#">冒险漫画</a></li>
+                <li><a href="#">校园漫画</a></li>
+                <li><a href="#">武侠格斗</a></li>
+                <li><a href="#">搞笑漫画</a></li>
+                <li><a href="#">侦探悬疑</a></li>
+                <li><a href="#">恐怖惊悚</a></li>
+                <li><a href="#">科幻机战</a></li>
+                <li><a href="#">竞技体育</a></li>
+                <li><a href="#">励志职场</a></li>
+                <li><a href="#">战争历史</a></li>
+                <li><a href="#">四格漫画</a></li>
+                <li><a href="#">生活亲情</a></li>
+                <li><a href="#">宅男腐女</a></li>
+                <li><a href="#">后宫漫画</a></li>
+                <li><a href="#">音乐舞蹈</a></li>
+            </ul>
+            <div class="clear"></div>
+            <ul class="footer_top_two">
+            	<li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+                <li><a href="#">I</a></li>
+                <li><a href="#">J</a></li>
+                <li><a href="#">K</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">N</a></li>
+                <li><a href="#">O</a></li>
+                <li><a href="#">P</a></li>
+                <li><a href="#">Q</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">U</a></li>
+                <li><a href="#">V</a></li>
+                <li><a href="#">W</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Y</a></li>
+                <li><a href="#">Z</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+    	<div class="content">
+        	<p>本站内容均来自于网络，仅提供试看，不提供下载，如您喜欢请支持正版</p>
+            <p>版权所有 2015-2017 manhuajia.cn 津ICP备09013255 联系我们：suggest@manhuajia.com 站长统计</p>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+</html>

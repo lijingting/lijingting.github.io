@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+h6{ text-align:center; font-size:60px; padding-top:80px; margin-bottom:15px; color:#00A3FF;}
+
+/* Pages Main Tyle */
+.pages {
+color: #000000;
+cursor: default;
+font-size: 13px;
+font-family: Tahoma, Verdana;
+padding: 3px 0px 3px 0px;
+width:310px;
+position:relative;
+left:50%;
+margin-left:-155px;
+margin-top:30px;
+}
+.pages .count, .pages .number, .pages .arrow {
+color: #000000;
+font-size: 13px;
+background-color: #F7F7F7;
+border: 1px solid #CCCCCC;
+}
+/* Page and PageCount Style */
+.pages .count {
+font-weight: bold;
+border-right: none;
+padding: 5px 15px 3px 15px;
+}
+/* Mode 0,1,2 Style (Number) */
+.pages .number {
+font-weight: normal;
+padding: 5px 15px 3px 15px;
+}
+.pages .number a, .pages .number span {
+font-size: 13px;
+}
+.pages .number span {
+color: #999999;
+margin: 0px 3px 0px 3px;
+}
+.pages .number a {
+color: #000000;
+text-decoration: none;
+}
+.pages .number a:hover {
+color: #0000ff;
+}
+/* Mode 3 Style (Arrow) */
+.pages .arrow {
+font-weight: normal;
+padding: 0px 5px 0px 5px;
+}
+.pages .arrow a, .pages .arrow span {
+font-size: 10px;
+font-family: Webdings;
+}
+.pages .arrow span {
+color: #999999;
+margin: 0px 5px 0px 5px;
+}
+.pages .arrow a {
+color: #000000;
+text-decoration: none;
+}
+.pages .arrow a:hover {
+color: #0000ff;
+}
+/* Mode 4 Style (Select) */
+.pages select, .pages input {
+color: #000000;
+font-size: 10px;
+font-family: Tahoma, Verdana;
+}
+/* Mode 5 Style (Input) */
+.pages .input input.ititle, .pages .input input.itext, .pages .input input.icount {
+color: #666666;
+font-weight: bold;
+background-color: #F7F7F7;
+border: 1px solid #CCCCCC;
+}
+.pages .input input.ititle {
+width: 70px;
+text-align: right;
+border-right: none;
+}
+.pages .input input.itext {
+width: 25px;
+color: #000000;
+text-align: right;
+border-left: none;
+border-right: none;
+}
+.pages .input input.icount {
+width: 35px;
+text-align: left;
+border-left: none;
+}
+.pages .input input.ibutton {
+height: 17px;
+color: #FFFFFF;
+font-weight: bold;
+font-family: Verdana;
+background-color: #999999;
+border: 1px solid #666666;
+padding: 0px 0px 2px 1px;
+margin-left: 2px;
+cursor: hand;
+}
+
+
+
+
+@media (max-width: 479px)
+{
+.grid figure{ width:280px;}
+figure.effect-duke h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: scale3d(0.8,0.8,1);
+	transform: scale3d(0.8,0.8,1);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	font-size:14px;
+}
+.grid figure figcaption p a{
+	color:#fff;
+	font-size:13px;	
+}
+figure.effect-duke p {
+	width:88%;
+}
+}

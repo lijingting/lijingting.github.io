@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main{ margin:10px 0;}
+#main .left{ width:730px; float:left;}
+#main .left img{ width:400px; position:relative; left:50%; margin-left:-200px;}
+#main .left h2{ margin-top:10px;}
+#main .left h3{ line-height:40px; border-bottom:1px solid #585858;}
+#main .left h3 a{ color:#0080C0; margin:0 10px;}
+#main .left p{ line-height:25px; margin-top:15px;}
+
+#main .left .buts{ width:220px; margin:0 auto; margin-top:10px; margin-bottom:10px;}
+#main .left .buts a{ display:inline-block; width:100px; text-align:center; color:#2E2E2E;}
+#main .left .buts a:hover{ color:#828282;}
+
+#main .right{ width:250px; float:right;}
+#main .right img{ width:100%; margin-top:20px;}
+
+.right_bottom_left{ width:20%; float:left;}
+.right_bottom_left img{ margin-top:10px;}
+.right_bottom_right{ width:75%; float:right; margin-top:20px;}
+.right_bottom_right a{ display:inline-block; margin-top:15px; color:#434343; font-size:13px;}
+.right_bottom_right .right_bottom_right_con{ color:#0080C0; font-size:18px;}
+
+.right p span{ background:#0080C0; color:#fff; display:inline-block; width:60px; text-align:center; line-height:30px; margin-left:15px; margin-top:10px; border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px;}
+.but a{ display:inline-block; background:#F0F; color:#fff; width:100%; text-align:center; line-height:30px; margin-top:10px; border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px;}
+.but a:hover{ background:#585858;}
+
+@media (min-width: 768px) and (max-width: 1050px)
+{
+.right{ display:none;}
+#main .left{ width:100%; float:none;}
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+.right{ display:none;}
+#main .left{ width:100%; float:none;}
+}
+
+@media (max-width: 479px)
+{
+.right{ display:none;}
+#main .left{ width:100%; float:none;}
+#main .left img{ width:300px; position:relative; left:50%; margin-left:-150px;}
+}

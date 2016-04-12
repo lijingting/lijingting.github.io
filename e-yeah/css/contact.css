@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+h6{ text-align:center; font-size:60px; padding-top:80px; margin-bottom:15px; color:#00A3FF;}
+.contact{ width:1000px; margin:0 auto; margin-top:50px;}
+.contact_left{ width:480px; height:430px; float:left; border:1px solid #969696;}
+.contact_right{ width:480px; float:right;}
+.contact_right h3{ font-size:26px; color:#5B5B5B; line-height:45px;}
+.con_contact_right{ margin-top:10px;}
+.con_contact_right p{ line-height:25px; font-size:15px; color:#7E7E7E;}
+.tact{ margin-top:15px;}
+.tact a{ display:inline-block; width:120px; height:44px; border:1px solid #BBBBBB; margin-right:5px; margin-bottom:10px; color:#747474; font-weight:bold;
+transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s;}
+.tact a:hover{ background:#00466E; color:#fff;}
+.tact a span{ display:inline-block; line-height:44px; position:relative; bottom:17px;}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1100px)
+{
+.contact{ width:480px; margin:0 auto; margin-top:50px;}
+.contact_left{ width:480px; height:430px; float:none; border:1px solid #969696;}
+.contact_right{ width:480px; float:none;}
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+.contact{ width:450px; margin:0 auto; margin-top:50px;}
+.contact_left{ width:450px; height:430px; float:none; border:1px solid #969696;}
+.contact_right{ width:450px; float:none;}
+h6{ text-align:center; font-size:50px; padding-top:80px; margin-bottom:15px; color:#00A3FF;}
+}
+
+@media (max-width: 479px)
+{
+.contact{ width:300px; margin:0 auto; margin-top:50px;}
+.contact_left{ width:300px; height:430px; float:none; border:1px solid #969696;}
+.contact_right{ width:300px; float:none;}
+h6{ text-align:center; font-size:40px; padding-top:80px; margin-bottom:15px; color:#00A3FF;}
+}

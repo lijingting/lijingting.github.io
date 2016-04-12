@@ -1,0 +1,776 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>漫画家网站</title>
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="css/content.css" rel="stylesheet" type="text/css"/>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".button").click(function(){
+  $(".menu").toggle();
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+//js无缝滚动代码
+function marquee(i, direction){
+	var obj = document.getElementById("marquee" + i);
+	var obj1 = document.getElementById("marquee" + i + "_1");
+	var obj2 = document.getElementById("marquee" + i + "_2");
+	if (direction == "up"){
+		if (obj2.offsetTop - obj.scrollTop <= 0){
+			obj.scrollTop -= (obj1.offsetHeight + 20);
+		}else{
+			var tmp = obj.scrollTop;
+			obj.scrollTop++;
+			if (obj.scrollTop == tmp){
+				obj.scrollTop = 1;
+			}
+		}
+	}else{
+		if (obj2.offsetWidth - obj.scrollLeft <= 0){
+			obj.scrollLeft -= obj1.offsetWidth;
+		}else{
+			obj.scrollLeft++;
+		}
+	}
+}
+
+function marqueeStart(i, direction){
+	var obj = document.getElementById("marquee" + i);
+	var obj1 = document.getElementById("marquee" + i + "_1");
+	var obj2 = document.getElementById("marquee" + i + "_2");
+
+	obj2.innerHTML = obj1.innerHTML;
+	var marqueeVar = window.setInterval("marquee("+ i +", '"+ direction +"')", 20);
+	obj.onmouseover = function(){
+		window.clearInterval(marqueeVar);
+	}
+	obj.onmouseout = function(){
+		marqueeVar = window.setInterval("marquee("+ i +", '"+ direction +"')", 20);
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="page">
+<header id="header">
+	<div class="content">
+		<div class="header_top">
+        	<ul>
+            	<li><a href="#">登录</a></li>
+                <li><a href="#">换肤</a></li>
+                <li><a href="#">我的观看记录</a></li>
+                <li><a href="#">支持漫画家</a></li>
+                <li><a href="#">个人中心</a></li>
+            </ul>
+            <div class="clear"></div>
+            <div class="header_top_con">
+            	<img src="img/logo.png" class="logo">
+                <img src="img/wenzi.png" class="wenzi">
+                <a href="#" class="chongzhi">点击充值</a>
+            </div>	
+            <div class="clear"></div>
+            <div class="header_top_bot">
+            	<p>漫画家共有6232部漫画供您欣赏 还在不断增加哦<span><a href="#">作品上传</a><a href="#">作者PRQ</a></span><div class="clear"></div></p>
+            </div>
+        </div>
+        <div class="header_bottom">
+        	<nav class="nav">
+            	<ul class="button">
+                	<li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="menu">
+                	<li><a href="index.html" class="action">首页</a></li>
+                    <li><a href="manhua.html">漫画</a></li>
+                    <li><a href="person.html">漫画家</a></li>
+                    <li><a href="cos.html">COS</a></li>
+                    <li><a href="huihua.html">绘画</a></li>
+                    <li><a href="teach.html">教程</a></li>
+                    <li><a href="huodong.html">活动</a></li>
+                    <li><a href="meitu.html">美图</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <form action="#" method="post" name="search" id="search">
+            	<input type="text" id="text">
+                <input type="button" id="but" value="搜索">
+            </form>	
+            <div class="clear"></div>
+        </div>
+    </div>
+</header>
+<div id="slider">
+	<div class="focus">
+      <div id="sliderA" class="sliderwrapper">
+        <div class="contentdiv">
+          <div class="slPic"><a href="#" target="_blank"><img src="img/banner1.jpg" alt="外" border="0" /></a><a href="#" target="_blank"></a></div><span></span></div>
+        <div class="contentdiv">
+          <div class="slPic"><a href="#" target="_blank"><img src="img/banner2.jpg" alt="马" border="0" /></a><a href="#" target="_blank"></a></div><span></span></div>
+        <div class="contentdiv">
+          <div class="slPic"><a href="#" target="_blank"><img src="img/banner3.jpg" alt="房" border="0" ></a><a href="#" target="_blank"></a></div><span></span></div>
+        <div class="contentdiv">
+          <div class="slPic"><a href="#" target="_blank"><img src="img/banner4.jpg" alt="远" border="0" ></a><a href="#" target="_blank"></a></div><span></span></div>
+        <div class="contentdiv">
+          <div class="slPic"><a href="#" target="_blank"><img src="img/banner5.jpg" alt="招" border="0" ></a><a href="#" target="_blank"></a></div><span></span></div>
+      </div>
+      <div id="paginate-sliderA" class="pagination"> <i class="toc"></i><i class="toc"></i><i class="toc"></i><i class="toc"></i> </div>
+    </div>
+    <script src="js/slider.js"></script>
+    <script type="text/javascript">
+    featuredcontentslider.init({id: "sliderA",contentsource: ["inline", ""],toc: "#increment",nextprev: ["", ""], revealtype: "mouseover", enablefade: [true, 0.15], autorotate: [true, 3500], delay: 150,onChange: function(previndex, curindex){}});
+    </script>
+</div>
+<div id="main">
+	<div class="main_top">
+    	<div class="content">
+        	<div class="main_top_top">
+            	<div class="main_top_top_left">
+                	<h3>最新漫画<a href="#">MORE</a></h3>
+                    <ul class="news">
+                    	<li>
+                        	<a href="#"><img src="img/news1.jpg"></a>
+                            <h4>银魂</h4>
+                        	<p>浊滐北行</p>
+                        </li>
+                        <li>
+                        	<a href="#"><img src="img/news2.jpg"></a>
+                            <h4>love live</h4>
+                        	<p>云酱</p>
+                        </li>
+                        <li>
+                        	<a href="#"><img src="img/news3.jpg"></a>
+                            <h4>红白黑黄</h4>
+                        	<p>银小月</p>
+                        </li>
+                        <li>
+                        	<a href="#"><img src="img/news4.jpg"></a>
+                            <h4>暗黑童话</h4>
+                        	<p>三个水三</p>
+                        </li>
+                        <li>
+                        	<a href="#"><img src="img/news5.jpg"></a>
+                            <h4>Gangsta匪徒</h4>
+                        	<p>LEAN</p>
+                        </li>
+                    </ul>
+                    <ul class="new_slider">
+                    	<li><a href="#"><img src="img/slider5.png"></a></li>
+                        <li><a href="#"><img src="img/slider6.png"></a></li>
+                        <li><a href="#"><img src="img/slider5.png"></a></li>
+                    </ul>
+                </div>
+                <div class="main_top_top_right">
+                	<img src="img/slider2.png">
+                    <h3>漫画预告<a href="#">MORE</a></h3>
+                    <ul>
+                    	<li><a href="#">火影585话预计<span>05-09 更新</span></a></li>
+                        <li><a href="#">海贼王666话预计<span>05-09 更新</span></a></li>
+                        <li><a href="#">死神491话预计<span>05-09 更新</span></a></li>
+                        <li><a href="#">妖精的尾巴281话预计<span>05-09 更新</span></a></li>
+                        <li><a href="#">火影585话预计<span>05-09 更新</span></a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="main_top_center">
+            	<h3>强推作品<a href="#">MORE</a></h3>  
+                <ul>
+                	<li>
+                    	<a href="#"><img src="img/qiangtui1.jpg"></a>
+                        <h4>F_茄</h4>
+                        <p>笑一笑 生活多滋味</p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/qiangtui2.jpg"></a>
+                        <h4>橘子_sama</h4>
+                        <p>笑一笑 生活多滋味</p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/qiangtui3.jpg"></a>
+                        <h4>糖糖_甜食控</h4>
+                        <p>笑一笑 生活多滋味</p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/qiangtui4.jpg"></a>
+                        <h4>丧病喵_璃落</h4>
+                        <p>笑一笑 生活多滋味</p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/qiangtui5.jpg"></a>
+                        <h4>小九Ningko</h4>
+                        <p>笑一笑 生活多滋味</p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/qiangtui6.jpg"></a>
+                        <h4>衰子</h4>
+                        <p>笑一笑 生活多滋味</p>
+                    </li>
+                    <div class="clear"></div>
+                </ul>          
+            </div>
+            <div class="main_top_bottom">
+            	<div class="main_top_bottom_left">
+                	<div class="demo">		
+                        <ul class="tabbtn" id="move-animate-left">
+                            <li class="current"><a href="###">周排行榜</a></li>
+                            <li><a href="###">月排行榜</a></li>
+                        </ul><!--tabbtn end-->
+                        <div class="tabcon" id="leftcon">
+                            <div class="subbox">
+                                <div class="sublist">
+                                    <ul>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang1.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《刀剑乱舞》</h4>
+                                                <h5>新增114篇</h5>
+                                                <p>草食培根</p>
+                                                <img src="img/one.png">
+                                            </div>
+                                        </a></li>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang2.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《黑塔利亚》</h4>
+                                                <h5>新增110篇</h5>
+                                                <p>fish chips</p>
+                                                <img src="img/two.png">
+                                            </div>
+                                        </a></li>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang3.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《仙剑网络》</h4>
+                                                <h5>新增102篇</h5>
+                                                <p>千凝垚垚酱</p>
+                                                <img src="img/three.png">
+                                            </div>
+                                        </a></li>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang4.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《love live》</h4>
+                                                <h5>新增120篇</h5>
+                                                <p>衰子</p>
+                                                <img src="img/four.png">
+                                            </div>
+                                        </a></li>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang5.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《VOCALOID》</h4>
+                                                <h5>新增121篇</h5>
+                                                <p>姬目Solist</p>
+                                                <img src="img/five.png">
+                                            </div>
+                                        </a></li>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang6.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《仙剑奇缘》</h4>
+                                                <h5>新增80篇</h5>
+                                                <p>游离仔</p>
+                                                <img src="img/six.png">
+                                            </div>
+                                        </a></li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div><!--tabcon end-->
+                                <div class="sublist">
+                                    <ul>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang4.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《love live》</h4>
+                                                <h5>新增120篇</h5>
+                                                <p>衰子</p>
+                                                <img src="img/one.png">
+                                            </div>
+                                        </a></li>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang2.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《黑塔利亚》</h4>
+                                                <h5>新增110篇</h5>
+                                                <p>fish chips</p>
+                                                <img src="img/two.png">
+                                            </div>
+                                        </a></li>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang1.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《刀剑乱舞》</h4>
+                                                <h5>新增114篇</h5>
+                                                <p>草食培根</p>
+                                                <img src="img/three.png">
+                                            </div>
+                                        </a></li>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang3.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《仙剑网络》</h4>
+                                                <h5>新增102篇</h5>
+                                                <p>千凝垚垚酱</p>
+                                                <img src="img/four.png">
+                                            </div>
+                                        </a></li>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang6.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《仙剑奇缘》</h4>
+                                                <h5>新增80篇</h5>
+                                                <p>游离仔</p>
+                                                <img src="img/five.png">
+                                            </div>
+                                        </a></li>
+                                        <li><a href="###">
+                                        	<div class="paihang_left">
+                                            	<img src="img/paihang5.jpg">
+                                            </div>
+                                            <div class="paihang_right">
+                                            	<h4>《VOCALOID》</h4>
+                                                <h5>新增121篇</h5>
+                                                <p>姬目Solist</p>
+                                                <img src="img/six.png">
+                                            </div>
+                                        </a></li>
+                                        <div class="clear"></div>
+                                    </ul>
+                                </div><!--tabcon end-->
+                            </div><!--tabcon end-->
+                        </div>
+                    </div><!--tabbox end-->
+                </div>
+                <div class="main_top_bottom_right">
+                	<h3>近期漫画<a href="#">MORE</a></h3>
+                    <ul>
+                    	<li><a href="#">我的双修道侣 第十一话 &nbsp 最强人格 98话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话</a></li>
+                        <li><a href="#">我的双修道侣 第十一话 &nbsp 最强人格 98话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话</a></li>
+                        <li><a href="#">我的双修道侣 第十一话 &nbsp 最强人格 98话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话</a></li>
+                        <li><a href="#">我的双修道侣 第十一话 &nbsp 最强人格 98话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话</a></li>
+                        <li><a href="#">我的双修道侣 第十一话 &nbsp 最强人格 98话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话</a></li>
+                        <li><a href="#">我的双修道侣 第十一话 &nbsp 最强人格 98话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话 &nbsp 狮子悬山 92话 &nbsp 君临臣下 192话</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main_slider">
+    	<img src="img/slider1.png">
+    </div>
+    <div class="main_bottom">
+        <div class="content">
+            <div class="main_bottom_left">
+                <div class="fenlei">
+                	  <ul id="tabs">
+                          <li><a href="###" name="#tab1">热门漫画</a></li>
+                          <li><a href="###" name="#tab2">港台漫画</a></li>
+                          <li><a href="###" name="#tab3">欧美漫画</a></li>   
+                      </ul>
+                      <div id="content">
+                          <div id="tab1">
+                          	  <ul>
+                              	  <li>
+                                      <a href="#"><img src="img/fenlei1.jpg"></a>
+                                      <h4>黑塔利亚</h4>
+                                      <p>忆尘</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei2.jpg"></a>
+                                      <h4>VACALOID</h4>
+                                      <p>杏仁味</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei3.jpg"></a>
+                                      <h4>排球！！</h4>
+                                      <p>林碳碳</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei4.jpeg"></a>
+                                      <h4>赤怕白雪</h4>
+                                      <p>张怕鬼</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei5.jpg"></a>
+                                      <h4>剑侠情缘3</h4>
+                                      <p>老长安</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei6.jpg"></a>
+                                      <h4>梦幻西游</h4>
+                                      <p>宅小匪</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei7.jpg"></a>
+                                      <h4>罪恶王冠</h4>
+                                      <p>Flishsk</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei8.jpg"></a>
+                                      <h4>请问您今天要来</h4>
+                                      <p>蒂亚喵</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei9.jpg"></a>
+                                      <h4>秦时明月</h4>
+                                      <p>楽千佐</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei10.jpg"></a>
+                                      <h4>游戏王ZEXAL </h4>
+                                      <p>PAND</p>
+                                  </li>
+                              </ul>  
+                          </div>
+                          <div id="tab2">
+                              <ul>
+                              	  <li>
+                                      <a href="#"><img src="img/fenlei1.jpg"></a>
+                                      <h4>黑塔利亚</h4>
+                                      <p>忆尘</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei2.jpg"></a>
+                                      <h4>VACALOID</h4>
+                                      <p>杏仁味</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei3.jpg"></a>
+                                      <h4>排球！！</h4>
+                                      <p>林碳碳</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei4.jpeg"></a>
+                                      <h4>赤怕白雪姬</h4>
+                                      <p>张怕鬼</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei5.jpg"></a>
+                                      <h4>剑侠情缘3</h4>
+                                      <p>老长安</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei6.jpg"></a>
+                                      <h4>梦幻西游</h4>
+                                      <p>宅小匪</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei7.jpg"></a>
+                                      <h4>罪恶王冠</h4>
+                                      <p>Flishsk</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei8.jpg"></a>
+                                      <h4>请问您今天要来</h4>
+                                      <p>蒂亚喵</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei9.jpg"></a>
+                                      <h4>秦时明月</h4>
+                                      <p>楽千佐</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei10.jpg"></a>
+                                      <h4>游戏王ZEXAL </h4>
+                                      <p>PAND</p>
+                                  </li>
+                              </ul>  
+                          </div>
+                          <div id="tab3">
+                              <ul>
+                              	  <li>
+                                      <a href="#"><img src="img/fenlei1.jpg"></a>
+                                      <h4>黑塔利亚</h4>
+                                      <p>忆尘</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei2.jpg"></a>
+                                      <h4>VACALOID</h4>
+                                      <p>杏仁味</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei3.jpg"></a>
+                                      <h4>排球！！</h4>
+                                      <p>林碳碳</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei4.jpeg"></a>
+                                      <h4>赤怕白雪姬</h4>
+                                      <p>张怕鬼</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei5.jpg"></a>
+                                      <h4>剑侠情缘3</h4>
+                                      <p>老长安</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei6.jpg"></a>
+                                      <h4>梦幻西游</h4>
+                                      <p>宅小匪</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei7.jpg"></a>
+                                      <h4>罪恶王冠</h4>
+                                      <p>Flishsk</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei8.jpg"></a>
+                                      <h4>请问您今天要来</h4>
+                                      <p>蒂亚喵</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei9.jpg"></a>
+                                      <h4>秦时明月</h4>
+                                      <p>楽千佐</p>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="img/fenlei10.jpg"></a>
+                                      <h4>游戏王ZEXAL </h4>
+                                      <p>PAND</p>
+                                  </li>
+                              </ul>  
+                          </div>
+                      </div>
+                </div>
+                <img src="img/slider3.png" class="slider3">
+                <div class="main_bottom_left_bottom">
+                    <div id="marquee1" class="marqueeleft">
+                        <div style="width:8000px;">
+                            <ul id="marquee1_1">
+                                <li>
+                                    <a class="pic" href="#"><img width="100" height="150" src="img/gundong1.jpg"></a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#"><img width="100" height="150" src="img/gundong2.jpg"></a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#"><img width="100" height="150" src="img/gundong3.jpg"></a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#"><img width="100" height="150" src="img/gundong4.jpg"></a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#"><img width="100" height="150" src="img/gundong5.jpg"></a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#"><img width="100" height="150" src="img/gundong6.jpg"></a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#"><img width="100" height="150" src="img/gundong7.jpg"></a>
+                                </li>
+                            </ul>
+                            <ul id="marquee1_2"></ul>
+                        </div>
+                    </div><!--marqueeleft end-->
+                    <script type="text/javascript">marqueeStart(1, "left");</script>
+                </div>    
+            </div>
+            <div class="main_bottom_right">
+                <h2>读者热议</h2>
+                <img src="img/slider4.png" class="slider4">
+                <h3>【拜见女王陛下】主角超能力创意大赛</h3>
+                <p>在《拜见女王陛下》中，大家想让主角拥有什么样的超能力呢？</p>
+                <a href="#" class="taolun">参与讨论</a>
+                <div class="clear"></div>
+                <h4>用户回复<span>总回复量：1234</span></h4>
+                <ul>
+                	<li>
+                    	<h5>kissXsis<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>赞w(°ｏ°)w！！！！</p>
+                    </li>
+                    <li>
+                    	<h5>猪是的年过来倒<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>只要勤奋更新都是最好的。。。</p>
+                    </li>
+                    <li>
+                    	<h5>小裟箩呀<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>0 0企鹅吧1019854062</p>
+                    </li>
+                    <li>
+                    	<h5>血凰翎<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>给软姐姐点个赞</p>
+                    </li>
+                    <li>
+                    	<h5>Evan丶凡<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>泥奏凯</p>
+                    </li>
+                    <li>
+                    	<h5>祭司<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>好萌！</p>
+                    </li>
+                </ul>
+                <a href="#" class="more">更多讨论</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+	<div class="footer_top">
+		<div class="content">
+        	<ul class="footer_top_one">
+            	<li><a href="#">爱情漫画</a></li>
+                <li><a href="#">冒险漫画</a></li>
+                <li><a href="#">校园漫画</a></li>
+                <li><a href="#">武侠格斗</a></li>
+                <li><a href="#">搞笑漫画</a></li>
+                <li><a href="#">侦探悬疑</a></li>
+                <li><a href="#">恐怖惊悚</a></li>
+                <li><a href="#">科幻机战</a></li>
+                <li><a href="#">竞技体育</a></li>
+                <li><a href="#">励志职场</a></li>
+                <li><a href="#">战争历史</a></li>
+                <li><a href="#">四格漫画</a></li>
+                <li><a href="#">生活亲情</a></li>
+                <li><a href="#">宅男腐女</a></li>
+                <li><a href="#">后宫漫画</a></li>
+                <li><a href="#">音乐舞蹈</a></li>
+            </ul>
+            <div class="clear"></div>
+            <ul class="footer_top_two">
+            	<li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+                <li><a href="#">I</a></li>
+                <li><a href="#">J</a></li>
+                <li><a href="#">K</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">N</a></li>
+                <li><a href="#">O</a></li>
+                <li><a href="#">P</a></li>
+                <li><a href="#">Q</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">U</a></li>
+                <li><a href="#">V</a></li>
+                <li><a href="#">W</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Y</a></li>
+                <li><a href="#">Z</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+    	<div class="content">
+        	<p>本站内容均来自于网络，仅提供试看，不提供下载，如您喜欢请支持正版</p>
+            <p>版权所有 2015-2017 manhuajia.cn 津ICP备09013255 联系我们：suggest@manhuajia.com 站长统计</p>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.tabso_yeso.js"></script>
+<script type="text/javascript">
+$(document).ready(function($){
+	
+	//上下滑动选项卡切换
+	$("#move-animate-top").tabso({
+		cntSelect:"#topcon",
+		tabEvent:"mouseover",
+		tabStyle:"move-animate",
+		direction : "top"
+	});
+	
+	//左右滑动选项卡切换
+	$("#move-animate-left").tabso({
+		cntSelect:"#leftcon",
+		tabEvent:"mouseover",
+		tabStyle:"move-animate",
+		direction : "left"
+	});
+	
+	//淡隐淡现选项卡切换
+	$("#fadetab").tabso({
+		cntSelect:"#fadecon",
+		tabEvent:"mouseover",
+		tabStyle:"fade"
+	});
+	
+	//默认选项卡切换
+	$("#normaltab").tabso({
+		cntSelect:"#normalcon",
+		tabEvent:"mouseover",
+		tabStyle:"normal"
+	});
+	
+});
+</script>
+  <script>
+    function resetTabs(){
+        $("#content > div").hide(); //Hide all content
+        $("#tabs a").attr("id",""); //Reset id's      
+    }
+
+    var myUrl = window.location.href; //get URL
+    var myUrlTab = myUrl.substring(myUrl.indexOf("#")); // For localhost/tabs.html#tab2, myUrlTab = #tab2     
+    var myUrlTabName = myUrlTab.substring(0,4); // For the above example, myUrlTabName = #tab
+
+    (function(){
+        $("#content > div").hide(); // Initially hide all content
+        $("#tabs li:first a").attr("id","current"); // Activate first tab
+        $("#content > div:first").fadeIn(); // Show first tab content
+        
+        $("#tabs a").on("click",function(e) {
+            e.preventDefault();
+            if ($(this).attr("id") == "current"){ //detection for current tab
+             return       
+            }
+            else{             
+            resetTabs();
+            $(this).attr("id","current"); // Activate this
+            $($(this).attr('name')).fadeIn(); // Show content for current tab
+            }
+        });
+
+        for (i = 1; i <= $("#tabs li").length; i++) {
+          if (myUrlTab == myUrlTabName + i) {
+              resetTabs();
+              $("a[name='"+myUrlTab+"']").attr("id","current"); // Activate url tab
+              $(myUrlTab).fadeIn(); // Show url tab content        
+          }
+        }
+    })()
+  </script>
+</html>

@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>忆烨传媒</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="css/content.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/success.css" />
+<script src="js/jquery-1.6.1.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".button").click(function(){
+  $(".menu").toggle();
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+//js无缝滚动代码
+function marquee(i, direction){
+	var obj = document.getElementById("marquee" + i);
+	var obj1 = document.getElementById("marquee" + i + "_1");
+	var obj2 = document.getElementById("marquee" + i + "_2");
+	if (direction == "up"){
+		if (obj2.offsetTop - obj.scrollTop <= 0){
+			obj.scrollTop -= (obj1.offsetHeight + 20);
+		}else{
+			var tmp = obj.scrollTop;
+			obj.scrollTop++;
+			if (obj.scrollTop == tmp){
+				obj.scrollTop = 1;
+			}
+		}
+	}else{
+		if (obj2.offsetWidth - obj.scrollLeft <= 0){
+			obj.scrollLeft -= obj1.offsetWidth;
+		}else{
+			obj.scrollLeft++;
+		}
+	}
+}
+
+function marqueeStart(i, direction){
+	var obj = document.getElementById("marquee" + i);
+	var obj1 = document.getElementById("marquee" + i + "_1");
+	var obj2 = document.getElementById("marquee" + i + "_2");
+
+	obj2.innerHTML = obj1.innerHTML;
+	var marqueeVar = window.setInterval("marquee("+ i +", '"+ direction +"')", 20);
+	obj.onmouseover = function(){
+		window.clearInterval(marqueeVar);
+	}
+	obj.onmouseout = function(){
+		marqueeVar = window.setInterval("marquee("+ i +", '"+ direction +"')", 20);
+	}
+}
+</script>
+<script>
+$(document).ready(function() {
+    $('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({
+                    scrollTop: targetOffset
+                },
+                1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+</head>
+
+<body>
+<div id="page">
+	<div class="one" id="icon1">
+        <div class="nav">
+            <ul class="button">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="fuwu.html">服务项目</a></li>
+                <li><a href="dongtai.html">最新动态</a></li>
+                <li><a href="susssed.html">成功案例</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="#">微信平台</a></li>
+            </ul>
+        </div>
+        <img src="img/logo.png" class="logo wow bounceIn" data-wow-delay="0.2s">
+        <div class="intro wow fadeInUp" data-wow-delay="0.6s">
+        	<p>青岛忆烨网络文化传媒有限公司是以名片信息系统网站运营、知识管理软件研发与知识汇集服务、网站建设服务为主体业务的高新科技公司。</p>
+            <p>公司成立于2013年1月，注册资金100万元，公司总部位于青岛市李沧区九水路60号中海河南社区9栋5单元1602室，经营范围包括：网站建设、软件开发、广告设计、动漫设计、电子产品销售、楼宇自动化设计及相关工程、经济信息咨询等。</p>
+            <p>公司立足知识经济的时代背景，开发知识汇集软件及应用扩展软件（包括系统），面向个人、企事业单位提供相应的咨询和技术服务。基于此，公司目前的主营业务为知识汇集软件开发、知识汇集软件销售、知识类网站建设及运营，同时在主营业务的基础上，对外承接传统类网站建设、软件开发相关的服务，开展注册许可的其他经营范围相关项目。</p>
+   			<p>公司致力于为企事业单位及个人用户提供知识汇集应用服务，并在此基础上运营业界首家“威客网络学院”，为有志于在知识经济时代利用自己的智力劳动创收的个人及团体提供最佳的知识网络传播平台，公司将以敏锐的市场洞察力、高品质的产品以及周到热情的服务使每一位客户获益。</p>
+        </div>
+        <a href="#icon6"><img src="img/but.png" class="but"></a>
+    </div>
+    <div class="two" id="icon2">
+        <div class="content">
+            <h2><span>我们的服务</span></h2>
+            <div class="banner">
+            	<div class="focus">
+                  <div id="sliderA" class="sliderwrapper">
+                    <div class="contentdiv">
+                      <div class="slPic"><a href="#" target="_blank"><img src="img/1.png" alt="外" border="0" /></a><a href="#" target="_blank"></a></div><span></span></div>
+                    <div class="contentdiv">
+                      <div class="slPic"><a href="#" target="_blank"><img src="img/2.png" alt="马" border="0" /></a><a href="#" target="_blank"></a></div><span></span></div>
+                    <div class="contentdiv">
+                      <div class="slPic"><a href="#" target="_blank"><img src="img/3.png" alt="房" border="0" ></a><a href="#" target="_blank"></a></div><span></span></div>
+                    <div class="contentdiv">
+                      <div class="slPic"><a href="#" target="_blank"><img src="img/4.png" alt="远" border="0" ></a><a href="#" target="_blank"></a></div><span></span></div>
+                    <div class="contentdiv">
+                      <div class="slPic"><a href="#" target="_blank"><img src="img/5.png" alt="招" border="0" ></a><a href="#" target="_blank"></a></div><span></span></div>
+                  </div>
+                  <div id="paginate-sliderA" class="pagination"> <i class="toc"></i><i class="toc"></i><i class="toc"></i><i class="toc"></i> </div>
+                </div>
+                <script src="js/slider.js"></script>
+                <script type="text/javascript">
+                featuredcontentslider.init({id: "sliderA",contentsource: ["inline", ""],toc: "#increment",nextprev: ["", ""], revealtype: "mouseover", enablefade: [true, 0.15], autorotate: [true, 3500], delay: 150,onChange: function(previndex, curindex){}});
+                </script>
+            </div>
+            <ul>
+            	<li class="wow fadeInDown"><a href="#">
+                	<img src="img/con1.png">
+                    <div class="right">
+                    	<h4>图标设计</h4>
+                        <p>软件图标设计，web图标设计，3D设计，工具栏图标设计，桌面主题图标设计，表情图标设计等。</p>
+                    </div>
+                </a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#">
+                	<img src="img/con2.png">
+                    <div class="right">
+                    	<h4>品牌网站建设</h4>
+                        <p>企业网站建设，产品专题网站，电子商务网站建设及各类平台网站策划与高品质网页设计等。</p>
+                    </div>
+                </a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.8s"><a href="#">
+                	<img src="img/con3.png">
+                    <div class="right">
+                    	<h4>移动手机应用设计</h4>
+                        <p>iphone、Andriod、Windows Phone等各大移动平台应用设计及各类手持终端概念与应用设计等。</p>
+                    </div>
+                </a></li>
+                <li class="wow fadeInDown"><a href="#">
+                	<img src="img/con4.png">
+                    <div class="right">
+                    	<h4>产品界面设计</h4>
+                        <p>软件图标设计，播放器界面设计，TV端界面设计，车载设备界面设计，桌面主题定制设计等。</p>
+                    </div>
+                </a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#">
+                	<img src="img/con5.png">
+                    <div class="right">
+                    	<h4>品牌标志设计搜索引擎优化</h4>
+                        <p>企业标识，产品形象标识，VI识别系统设计，规范视觉美术，提高企业及产品形象的视觉认识。</p>
+                    </div>
+                </a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.8s"><a href="#">
+                	<img src="img/con6.png">
+                    <div class="right">
+                    	<h4>搜索引擎优化</h4>
+                        <p>百度，谷歌等搜索引擎排名，网站推广与网站SEO优化等。</p>
+                    </div>
+                </a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="three" id="icon3">
+        <div class="content">
+            <h3>新闻动态<a href="#">more</a></h3>
+            <ul>
+            	<li class="wow bounceInLeft">
+                	<div class="li_left">
+                    	<h4>10月</h4>
+                        <p>10日</p>
+                        <h5>2015年</h5>
+                        <a href="#"><img src="img/but1.png"></a><br>
+                        <a href="#"><img src="img/but2.png"></a><br>
+                        <a href="#"><img src="img/but3.png"></a>
+                    </div>
+                    <div class="li_right">
+                    	<img src="img/news.png" class="lef_news">
+                        <div class="rig_news">
+                        	<p>时间：17:13:35<span>点击：111</span></p>
+                            <a href="#"><img src="img/but4.png"></a>
+                        	<a href="#"><img src="img/but5.png"></a>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="bot_news">
+                            <h6><a href="#">青岛忆烨网络文化传媒企业网站管理系统</a></h6>
+                            <p>青岛忆烨网络文化传媒有限公司_忆烨网站企业建站系统_青岛建站_忆烨传媒专业建站_忆烨网站企业管理系统。</p>
+                            <a href="#" class="mor">MORE</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="wow bounceInRight">
+                	<div class="li_left">
+                    	<h4>10月</h4>
+                        <p>10日</p>
+                        <h5>2015年</h5>
+                        <a href="#"><img src="img/but1.png"></a><br>
+                        <a href="#"><img src="img/but2.png"></a><br>
+                        <a href="#"><img src="img/but3.png"></a>
+                    </div>
+                    <div class="li_right">
+                    	<img src="img/news.png" class="lef_news">
+                        <div class="rig_news">
+                        	<p>时间：17:13:35<span>点击：111</span></p>
+                            <a href="#"><img src="img/but4.png"></a>
+                        	<a href="#"><img src="img/but5.png"></a>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="bot_news">
+                            <h6><a href="#">青岛忆烨网络文化传媒企业网站管理系统</a></h6>
+                            <p>青岛忆烨网络文化传媒有限公司_忆烨网站企业建站系统_青岛建站_忆烨传媒专业建站_忆烨网站企业管理系统。</p>
+                            <a href="#" class="mor">MORE</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="four" id="icon4">
+        <div class="content">
+            <h2><span>成功案例<a href="#">more</a></span></h2>
+            <div class="grid">
+                <figure class="effect-duke wow rotateInDownLeft">
+                    <img src="img/img1.png" alt="img27"/>
+                    <figcaption>
+                        <h2>青岛卓越未来体育文化传播有限公司</h2>
+                        <p>开发周期：31天 &nbsp; 项目地址：<a href="#">http://www.com/</a></p>
+                        <a href="#">View more</a
+                    ></figcaption>			
+                </figure>
+                <figure class="effect-duke wow rotateInDownRight">
+                    <img src="img/img2.png" alt="img17"/>
+                    <figcaption>
+                        <h2>东莞市恩格照明科技有限公司</h2>
+                        <p>开发周期：20天 项目地址：<a href="#">http://www.gdenergy.com.cn/</a></p>
+                        <a href="#">View more</a>
+                    </figcaption>			
+                </figure>
+            </div>
+            <div class="grid">
+                <figure class="effect-duke wow rotateInDownLeft">
+                    <img src="img/img3.png" alt="img27"/>
+                    <figcaption>
+                        <h2>青岛锦绣蓄牧生态养殖有限公司</h2>
+                        <p>开发周期：23天 &nbsp; &nbsp; &nbsp; 项目地址：<a href="#">http://www.qdjinxiu.cn</a></p>
+                        <a href="#">View more</a>
+                    </figcaption>			
+                </figure>
+                <figure class="effect-duke wow rotateInDownRight">
+                    <img src="img/img4.png" alt="img17"/>
+                    <figcaption>
+                        <h2>谢汀兰中国画艺术网</h2>
+                        <p>开发周期：26天 &nbsp; &nbsp; &nbsp; 项目地址：<a href="#">http://www.qdjinxiu.cn</a></p>
+                        <a href="#">View more</a>
+                    </figcaption>			
+                </figure>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="five" id="icon5">
+    	<h2><span>品牌客户<a href="#">more</a></span></h2>
+        <div id="marquee1" class="marqueeleft wow fadeInUp">
+            <div style="width:8000px;">
+                <ul id="marquee1_1">
+                    <li>
+                        <a class="pic" href="#"><img width="135" height="104" src="img/pin1.png"></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img width="135" height="104" src="img/pin2.png"></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img width="135" height="104" src="img/pin3.png"></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img width="135" height="104" src="img/pin4.png"></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img width="135" height="104" src="img/pin5.png"></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img width="135" height="104" src="img/pin6.png"></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img width="135" height="104" src="img/pin7.png"></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img width="135" height="104" src="img/pin8.png"></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img width="135" height="104" src="img/pin9.png"></a>
+                    </li>
+                </ul>
+                <ul id="marquee1_2"></ul>
+            </div>
+        </div><!--marqueeleft end-->
+        <script type="text/javascript">marqueeStart(1, "left");</script>
+    </div>
+    <div class="footer" id="icon6">
+    	<div class="footer_top">
+       		<div class="con_form wow slideInDown">
+            	<h3>WELCOME</h3>
+                <p>忆烨网络文化传媒有限公司</p>
+            	<form action="#" method="post" id="myform" mame="myform"> 
+                	<input type="text" name="names" placeholder="姓名" class="con_input1">
+                    <input type="text" name="mail" placeholder="e-mail" class="con_input2"><br>
+                    <textarea name="message" placeholder="留言"></textarea><br>
+                    <input type="button" name="sends" value="留言" class="sends">
+                </form>
+            </div>
+            <div class="content">
+                <img src="img/weixin.jpg" class="wow fadeInUp">
+                <ul>
+                    <li class="wow bounceInRight">
+                        <h3>服务项目</h3>
+                        <p><a href="#">品牌建站</a></p>
+                        <p><a href="#">图标设计</a></p>
+                        <p><a href="#">移动手机应用设计</a></p>
+                        <p><a href="#">产品界面设计</a></p>
+                        <p><a href="#">品牌标识设计</a></p>
+                        <p><a href="#">收索引擎优化</a></p>
+                    </li>
+                    <li class="wow bounceInRight" data-wow-delay="0.4s">
+                        <h3>最新动态</h3>
+                        <p><a href="#">青岛忆烨动态</a></p>
+                        <p><a href="#">SEO优化知识</a></p>
+                        <p><a href="#">优秀设计大奖</a></p>
+                        <p><a href="#">网络营销知识</a></p>
+                        <p><a href="#">网站建设知识</a></p>
+                    </li>
+                    <li class="wow bounceInRight" data-wow-delay="0.8s">
+                        <h3>精彩案例</h3>
+                        <p><a href="#">法律律师</a></p>
+                        <p><a href="#">信息生活</a></p>
+                        <p><a href="#">外国网站</a></p>
+                        <p><a href="#">新型网站</a></p>
+                        <p><a href="#">婚纱摄影</a></p>
+                        <p><a href="#">政府学校</a></p>
+                        <p><a href="#">企业集团</a></p>
+                    </li>
+                    <li class="wow bounceInRight" data-wow-delay="1.2s">
+                        <h3>关于我们</h3>
+                        <p><a href="#">公司简介</a></p>
+                        <p><a href="#">新闻动态</a></p>
+                        <p><a href="#">品牌客户</a></p>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+        	<p>友情链接： <a href="#">名片青岛</a>  <a href="#">义卖网</a> <a href="#">孙悟空</a> <a href="#">快递查询</a></p> 
+            <p>公司地址：青岛市李沧区九水路60号中海河南社区9栋5单元1602室 &nbsp; &nbsp; 服务热线：0532-58701037</p>
+        	<p>版权所有：青岛忆烨网络文化传媒有限公司</p>
+            <div class="content">
+            	<div class="con_foot_left">
+                    <a href="#"><img src="img/pic2 (2).gif"></a>
+                    <a href="#" class="imgs"><img src="img/pic2 (1).gif"></a>
+                </div>
+                <div class="con_foot_right">
+                	<a href="#">内部OA</a>
+                    <a href="#">技术支持</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="buts">
+    <li><a href="#icon1" class="icon1"><img src="img/icon1s.png"></a></li>
+    <li><a href="#icon2" class="icon2"><img src="img/icon2s.png"></a></li>
+    <li><a href="#icon3" class="icon3"><img src="img/icon3s.png"></a></li>
+    <li><a href="#icon4" class="icon4"><img src="img/icon4.png"></a></li>
+    <li><a href="#icon5" class="icon5"><img src="img/icon5.png"></a></li>
+    <li><a href="#icon6" class="icon6"><img src="img/icon6.png"></a></li>
+</ul>
+</body>
+<script src="js/wow.min.js"></script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+</script>
+</html>

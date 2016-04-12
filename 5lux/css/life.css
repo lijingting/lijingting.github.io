@@ -1,0 +1,264 @@
+/*livehouse-top部分  start*/
+.livehouse-top {
+    height: 140px;
+    background-color: pink;
+    font: 30px/140px "micrsoft yahei";
+    text-align: center;
+}
+/*livehouse-top部分  end*/
+
+
+/*livehouse-top-nav部分 start*/
+.livehouse-top-nav {
+    height: 38px;
+    background-color: #131313;
+}
+
+.livehouse-top-nav ul li {
+    width: 130px;
+    height: 38px;
+    background-color: #CF0101;
+    font: bold 14px/38px "microsoft yahei";
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 400px;
+}
+/*livehouse-top-nav部分 end*/
+
+/*livehouse-top-show部分 start*/
+.livehouse-top-show {
+    display: block;
+    padding-bottom: 15px;
+}
+/*livehouse-top-show部分 end*/
+
+/*favorate-band部分 start*/
+.favorate-band {
+    margin-bottom: 20px;
+}
+.favorate-band .favorate-band-nav{
+    height: 52px;
+}
+.favorate-band .tuijian {
+    width: 336px;
+    height: 36px;
+    padding-top: 13px;
+}
+.favorate-band .more-allband a {
+    width: 66px;
+    height: 45px;
+    float: right;
+    background-image: url(../images/more.png);
+    text-align: center;
+    font: 12px/45px "simsun";
+}
+.favorate-band-show ul{
+    height: 240px;
+    padding: 20px 0;
+    box-shadow:0px 2px 16px #a7a7a7;
+}
+.favorate-band-show ul li {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 240px;
+    padding: 0 10px;
+}
+.favorate-band-show .band-mask {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 181px;
+    height: 241px;
+    background-color: #000;
+    opacity: 0;
+    font: 30px/241px "Microsoft yahei";
+    text-align: center;
+    color: #cccccc;
+
+}
+/*favorate-band部分 end*/
+
+/*goods-category部分 start*/
+.goods-category {
+    margin-bottom: 30px;
+}
+.goods-category-links{
+    height: 232px;
+    box-shadow:0px 2px 16px #a7a7a7;
+    padding: 8px;
+}
+.goods-category-links .category-links {
+    width: 245px;
+    height: 232px;
+    float: left;
+    border-right: 1px dashed #9E9E9E;
+}
+.category-links.border-change{
+    border-right: 0px;
+}
+.category-links .wine-index {
+    position: relative;
+    height: 100px;
+    padding-bottom: 20px;
+}
+.category-links .wine-index dl {
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    height: 100px;
+    padding-left: 40px;
+    background: url("../images/life_156.png") no-repeat;
+    background-size: 35px 35px;
+}
+.category-links .wine-index .category-icon2 {
+    background-image: url("../images/life_183.png");
+}
+.category-links .wine-index .category-icon3 {
+    background-image: url("../images/life_161.png");
+}
+.category-links .wine-index .category-icon4 {
+    background-image: url("../images/life_178.png");
+}
+.category-links .wine-index .category-icon5 {
+    background-image: url("../images/life_172.png");
+}
+.category-links .wine-index .category-icon6 {
+    background-image: url("../images/life_183.png");
+}
+.wine-index dl dt {
+    width: 30px;
+    padding: 0 3px;
+    font: bold 14px/22px "microsoft yahei";
+}
+
+.wine-index dl dd {
+    float: left;
+    margin-right: 10px;
+    padding: 0 3px;
+    font: 12px/22px "microsoft yahei";
+}
+.wine-index .dt-title {
+    color: #000;
+}
+.wine-index dt:hover, .wine-index dd:hover{
+    background-color: #CF0101;
+}
+.wine-index dt:hover a ,.wine-index dd:hover a {
+    color: #ffffff;
+}
+/*goods-category部分 end*/
+
+
+/*specific-goods部分 start*/
+.specific-goods {
+    background-color: #D3D3D3;
+}
+
+/*good-wine部分 start*/
+.good-wine {
+    box-shadow:0px 2px 16px #a7a7a7;
+    margin-bottom: 60px;
+}
+.good-wine-nav {
+    height: 90px;
+    background-color: #fff;
+}
+.good-wine-nav ul {
+    float: right;
+}
+.good-wine-nav ul li {
+    float: left;
+    margin-right: 22px;
+    font: 12px/90px "microsoft yahei";
+
+}
+.good-wine-show {
+    background-color: #fff;
+}
+.good-wine-top {
+    height: 308px;
+}
+.good-wine-top .wine-left-show {
+    height: 308px;
+    float: left;
+    padding-left: 12px;
+}
+.good-wine-top .wine-right-show {
+    float: right;
+    width: 353px;
+    height: 308px;
+    padding-right: 11px;
+}
+.wine-right-show .wine-right-showA{
+    display: block;
+    padding-bottom: 8px;
+}
+.good-wine-bottom {
+    height: 266px;
+    padding: 25px 0px 25px 2px;
+
+}
+.good-wine-bottom ul li {
+    height: 266px;
+    width: 183px;
+    float: left;
+    text-align: center;
+    margin: 0 8px;
+}
+.li-shadow {
+    box-shadow:0px 2px 16px #a7a7a7;
+}
+.wine-pic img {
+    width: 183px;
+    height: 193px;
+}
+.price-label, .label-mask{
+    display: inline-block;
+    width: 183px;
+    height: 56px;
+    margin-top: 12px;
+    padding-bottom: 5px;
+
+}
+.label-mask {
+    background-color: #E0E0E0;
+}
+.wine-name {
+    display: block;
+    width: 175px;
+    height: 24px;
+    padding-top: 8px;
+    color: #000000;
+    text-align: center;
+    font: 12px/24px "microsoft yahei";
+}
+.sale-price {
+    display: block;
+    width: 175px;
+    height: 24px;
+    text-align: center;
+    font: 14px/24px "microsoft yahei"
+
+}
+/*good-wine部分 end*/
+.space {
+    height: 1px;   /*用于额外增加内容*/
+}
+.good-wine.margin-change {
+    margin-bottom: 30px;    /*更改最后的margin-bottom值*/
+}
+/*specific-goods部分 end*/
+
+
+/*livehouse-footer部分 start*/
+
+        
+        /* footer部分内容 */
+
+
+/*livehouse-footer部分 end*/
+
+

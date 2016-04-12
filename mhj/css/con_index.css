@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main{ margin:10px 0;}
+#main .left{ width:730px; float:left;}
+#main .left img{ width:600px; position:relative; left:50%; margin-left:-300px;}
+#main .left h2{ text-align:center; line-height:50px; border-bottom:1px solid #585858;}
+#main .left p{ line-height:30px;}
+#main .left p a{ color:#2E2E2E;}
+
+#main .left .p_one{ color:#F0F;}
+#main .left .p_one span{ color:#000; margin-left:20px;}
+#main .left .p_two{ margin-bottom:10px;}
+#main .left .p_two a{ color:#fff; background:#0080C0; display:inline-block; width:80px; text-align:center; line-height:30px; margin-left:15px; margin-top:10px; transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s}
+#main .left .p_two a:hover{ background:#585858;}
+
+#main .left .p_three{ margin-bottom:15px;}
+#main .left .p_three a{ border:3px solid #0080C0; display:inline-block; width:80px; text-align:center; line-height:30px; margin-left:15px; margin-top:10px; border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px;}
+#main .left .p_three a:hover{ border:3px solid #585858;}
+
+#main .left .but{ width:220px; margin:0 auto; margin-top:10px; margin-bottom:10px;}
+#main .left .but a{ display:inline-block; width:100px; text-align:center; color:#2E2E2E;}
+#main .left .but a:hover{ color:#828282;}
+
+#main .right{ width:250px; float:right;}
+#main .right img{ width:80px; position:relative; margin-left:-40px; left:50%; margin-top:10px;  border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; -webkit-border-radius:50px;}
+#main .right h3{ text-align:center; line-height:30px;}
+#main .right p{ text-align:center; line-height:35px;}
+#main .right p span{ display:inline-block; width:80px; text-align:center;}
+#main .right .but1 a{ background:#0080C0; color:#fff; display:inline-block; width:60px; text-align:center; line-height:30px; margin-left:15px; margin-top:10px; border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px;}
+#main .right .but1 a:hover{ background:#585858;}
+#main .right .but2{ margin-top:20px;}
+#main .right .but2 .but2_one{ display:inline-block; width:80px; text-align:center; line-height:30px; background:#F0F; color:#FFF;}
+#main .right .but2 .but2_two{ display:inline-block; width:160px; text-align:center; line-height:30px; background:#F0F; color:#FFF;}
+#main .right .but2 a:hover{ background:#585858;}
+
+
+@media (min-width: 768px) and (max-width: 1050px)
+{
+#main .right{ display:none;}
+#main .left{ width:100%; float:none;}
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+#main .right{ display:none;}
+#main .left{ width:100%; float:none;}
+#main .left img{ width:100%; position:relative; left:0; margin-left:0;}
+}
+
+@media (max-width: 479px)
+{
+#main .right{ display:none;}
+#main .left{ width:100%; float:none;}
+#main .left img{ width:100%; position:relative; left:0; margin-left:0;}
+#main .left .p_three a{ border:3px solid #0080C0; display:inline-block; width:52px; text-align:center; line-height:20px; margin-left:5px; margin-top:10px; font-size:12px;}
+}

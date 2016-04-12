@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>漫画家网站</title>
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="css/content.css" rel="stylesheet" type="text/css"/>
+<link href="css/person.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".button").click(function(){
+  $(".menu").toggle();
+  });
+});
+</script>
+</head>
+
+<body>
+<div class="page">
+<header id="header">
+	<div class="content">
+		<div class="header_top">
+        	<ul>
+            	<li><a href="#">登录</a></li>
+                <li><a href="#">换肤</a></li>
+                <li><a href="#">我的观看记录</a></li>
+                <li><a href="#">支持漫画家</a></li>
+                <li><a href="#">个人中心</a></li>
+            </ul>
+            <div class="clear"></div>
+            <div class="header_top_con">
+            	<img src="img/logo.png" class="logo">
+                <img src="img/wenzi.png" class="wenzi">
+                <a href="#" class="chongzhi">点击充值</a>
+            </div>	
+            <div class="clear"></div>
+            <div class="header_top_bot">
+            	<p>漫画家共有6232部漫画供您欣赏 还在不断增加哦<span><a href="#">作品上传</a><a href="#">作者PRQ</a></span><div class="clear"></div></p>
+            </div>
+        </div>
+        <div class="header_bottom">
+        	<nav class="nav">
+            	<ul class="button">
+                	<li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="menu">
+                	<li><a href="index.html">首页</a></li>
+                    <li><a href="manhua.html">漫画</a></li>
+                    <li><a href="person.html" class="action">漫画家</a></li>
+                    <li><a href="cos.html">COS</a></li>
+                    <li><a href="huihua.html">绘画</a></li>
+                    <li><a href="teach.html">教程</a></li>
+                    <li><a href="huodong.html">活动</a></li>
+                    <li><a href="meitu.html">美图</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <form action="#" method="post" name="search" id="search">
+            	<input type="text" id="text">
+                <input type="button" id="but" value="搜索">
+            </form>	
+            <div class="clear"></div>
+        </div>
+    </div>
+</header>
+<div id="slider">
+    <div class="content">
+        <img src="img/banner10.jpg">
+    </div>
+</div>
+<div id="main">
+    <div class="content">
+        <div class="main_left">
+        	<h3>推荐CP</h3>
+            <ul class="main_three">
+            	<li>
+                	<a href="#"><img src="img/cp1.jpg"></a>
+                    <h6>靖苏<a href="#">更多</a></h6>
+                    <p><a href="#">【琅琊榜】殊途（点梗）</a><span>luy</span></p>
+                    <p><a href="#">（苏靖苏）江湖夜雨十年… </a><span>繁露</span></p>
+                    <p><a href="#">【琅琊榜】殊途(10）</a><span>luy</span></p>
+                    <p><a href="#">【琅琊榜】殊途（9）</a><span>luy</span></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/cp2.png"></a>
+                    <h6>楼诚<a href="#">更多</a></h6>
+                    <p><a href="#">诚心不改，日月可鉴 番</a><span>疯狂的小号…</span></p>
+                    <p><a href="#">【楼诚衍生】桃花雨（何</a><span>疯狂的小号</span></p>
+                    <p><a href="#">【楼诚衍生】桃花雨（何</a><span>疯狂的小号</span></p>
+                    <p><a href="#">姘头（划掉）走私同盟相</a><span>铁岭吴彦祖</span></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/cp3.jpg"></a>
+                    <h6>瓶邪<a href="#">更多</a></h6>
+                    <p><a href="#">Chapter.54 师父的真相 </a><span>小箱爱绑双…</span></p>
+                    <p><a href="#">Chapter.53 黑瞎子的过…</a><span>小箱爱绑双…</span></p>
+                    <p><a href="#">对哨兵向导中特异精神向… </a><span>水月澜</span></p>
+                    <p><a href="#">【瓶邪】命若归途（5） </a><span>流砂拂乱</span></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/cp4.png"></a>
+                    <h6>1599<a href="#">更多</a></h6>
+                    <p><a href="#">【1599】【花吐paro有… </a><span>矽枫</span></p>
+                    <p><a href="#">[1599]佛曰不可说（1） </a><span>茨莼</span></p>
+                    <p><a href="#">【1599】段子① [梦]H… </a><span>文笔永远逗…</span></p>
+                    <p><a href="#">【159915】无限循环 第… </a><span>R爷_</span></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/cp5.jpg"></a>
+                    <h6>策藏<a href="#">更多</a></h6>
+                    <p><a href="#">剑网3《放开那只西湖叽… </a><span>鸡腿菇</span></p>
+                    <p><a href="#">#策藏#面基（上） </a><span>箜影Wormho…</span></p>
+                    <p><a href="#">#策藏#那时候五人本也是</a><span>箜影Wormho</span></p>
+                    <p><a href="#">活着这件小事儿（5） </a><span>斛斯扇</span></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/cp6.jpg"></a>
+                    <h6>楼诚<a href="#">更多</a></h6>
+                    <p><a href="#">act.4 不属于你的红色 </a><span>倒大数</span></p>
+                    <p><a href="#">act.3 您好，我是你的助… </a><span>倒大数</span></p>
+                    <p><a href="#">act.2 鹤唷 </a><span>倒大数</span></p>
+                    <p><a href="#">act.1 名为最美之物 </a><span>倒大数</span></p>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        	<h3>最新发布</h3>
+            <ul class="main_one">
+            	<li>
+                	<h4>同人<a href="#">查看更多</a></h4>
+                    <p><a href="#">伪装者/楼诚 无间蛇影 舞会假面</a><span>伪装者</span><a href="#" class="main_one_right">壹德公子</a></p>
+                    <p><a href="#">Chapter.53 黑瞎子的过去</a><span>盗墓笔记</span><a href="#" class="main_one_right">小箱爱绑双…</a></p>
+                    <p><a href="#">[明唐]月夕花朝 20</a><span>剑网3</span><a href="#" class="main_one_right">莫凡凡</a></p>
+                    <p><a href="#">【琅琊榜】【蔺流】破冰（3）</a><span>琅琊榜</span><a href="#" class="main_one_right">苇汁</a></p>
+                    <p><a href="#">【琅琊榜】【蔺流】破冰（2）</a><span>琅琊榜</span><a href="#" class="main_one_right">苇汁</a></p>
+                    <p><a href="#">【琅琊榜】【蔺流】破冰（1）</a><span>琅琊榜</span><a href="#" class="main_one_right">苇汁</a></p>
+                    <p><a href="#">好玩不过嫂子（3）</a><span>伪装者</span><a href="#" class="main_one_right">弦翻塞外声</a></p>
+                    <p><a href="#">闲事卷（1）</a><span>金光布袋戏</span><a href="#" class="main_one_right">河马小象</a></p>
+                </li>
+                <li>
+                	<h4>原创<a href="#">查看更多</a></h4>
+                    <p><a href="#">真是疯狂（1）</a><a href="#" class="main_one_right">小箱爱绑双…</a></p>
+                    <p><a href="#">【翌镜城】宅男这种生物我真是不明白啊</a><a href="#" class="main_one_right">第六弦</a></p>
+                    <p><a href="#">【翌镜城】宅男这种生物我真是不明白啊</a><a href="#" class="main_one_right">第六弦</a></p>
+                    <p><a href="#">千代（2、黑泽树一）</a><a href="#" class="main_one_right">苏与苏</a></p>
+                    <p><a href="#">第一章 普拉普小镇</a><a href="#" class="main_one_right">回忆最后</a></p>
+                    <p><a href="#">天鹅</a><a href="#" class="main_one_right">怜衣</a></p>
+                    <p><a href="#">默（2）</a><a href="#" class="main_one_right">didkmeme</a></p>
+                    <p><a href="#">簋楼·陌上偏安【浣秋府-引画楼，6】</a><a href="#" class="main_one_right">叶允止</a></p>
+                </li>
+            </ul>
+            <div class="clear"></div>
+            <h3>热门同人<a href="#">MORE</a></h3>
+            <ul class="main_two">
+            	<li>
+                	<h5>伪装者</h5>
+                    <p>本周更新241篇</p>
+                    <img src="img/tongren1.jpg">
+                </li>
+                <li>
+                	<h5>剑侠情缘网络版3</h5>
+                    <p>本周更新102篇</p>
+                    <img src="img/tongren2.jpg">
+                </li>
+                <li>
+                	<h5>盗墓笔记</h5>
+                    <p>本周更新69篇</p>
+                    <img src="img/tongren3.jpg">
+                </li>
+                <li>
+                	<h5>琅琊榜</h5>
+                    <p>本周更新47篇</p>
+                    <img src="img/tongren4.jpg">
+                </li>
+                <li>
+                	<h5>全职高手</h5>
+                    <p>本周更新41篇</p>
+                    <img src="img/tongren5.jpg">
+                </li>
+                <li>
+                	<h5>黑子的篮球</h5>
+                    <p>本周更新32篇</p>
+                    <img src="img/tongren6.jpg">
+                </li>
+                <li>
+                	<h5>黑塔利亚</h5>
+                    <p>本周更新23篇</p>
+                    <img src="img/tongren7.jpg">
+                </li>
+                <li>
+                	<h5>Free！男子游泳部</h5>
+                    <p>本周更新15篇</p>
+                    <img src="img/tongren8.jpg">
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="main_right">
+        	<div class="main_right_top">
+                <h4>最新作品</h4>
+                <ul class="huishi">
+                	<li>
+                    	<a href="#"><img src="img/news2.jpg"></a>
+                        <span>银魂</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/news3.jpg"></a>
+                        <span>赤化白雪</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/news4.jpg"></a>
+                        <span>张怕鬼</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/news5.jpg"></a>
+                        <span>忆尘</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/news6.jpg"></a>
+                        <span>宅小匪</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/paihang2.jpg"></a>
+                        <span>蒂亚喵</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/paihang3.jpg"></a>
+                        <span>风风眠</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/paihang4.jpg"></a>
+                        <span>楽千佐</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/paihang5.jpg"></a>
+                        <span>青宴</span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <a href="#" class="mores">查看更多</a>
+                <h4>大家都喜欢的</h4>
+                <ul class="huishi">
+                	<li>
+                    	<a href="#"><img src="img/paihang6.jpg"></a>
+                        <span>杏仁味</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/paihang3.jpg"></a>
+                        <span>林碳碳/span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/paihang4.jpg"></a>
+                        <span>老长安</span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <a href="#" class="mores">查看更多</a>
+            </div>
+        	<div class="main_right_bottom">
+                <h2>读者热议</h2>
+                <img src="img/slider4.png" class="slider4">
+                <h3>【拜见女王陛下】主角超能力创意大赛</h3>
+                <p>在《拜见女王陛下》中，大家想让主角拥有什么样的超能力呢？</p>
+                <a href="#" class="taolun">参与讨论</a>
+                <div class="clear"></div>
+                <h4>用户回复<span>总回复量：1234</span></h4>
+                <ul>
+                	<li>
+                    	<h5>Evan丶凡<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>泥奏凯</p>
+                    </li>
+                    <li>
+                    	<h5>祭司<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>好萌！</p>
+                    </li>
+                    <li>
+                    	<h5>万圣萌宅<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>。。。万圣萌宅！！！</p>
+                    </li>
+                </ul>
+                <a href="#" class="more">更多讨论</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<footer id="footer">
+	<div class="footer_top">
+		<div class="content">
+        	<ul class="footer_top_one">
+            	<li><a href="#">爱情漫画</a></li>
+                <li><a href="#">冒险漫画</a></li>
+                <li><a href="#">校园漫画</a></li>
+                <li><a href="#">武侠格斗</a></li>
+                <li><a href="#">搞笑漫画</a></li>
+                <li><a href="#">侦探悬疑</a></li>
+                <li><a href="#">恐怖惊悚</a></li>
+                <li><a href="#">科幻机战</a></li>
+                <li><a href="#">竞技体育</a></li>
+                <li><a href="#">励志职场</a></li>
+                <li><a href="#">战争历史</a></li>
+                <li><a href="#">四格漫画</a></li>
+                <li><a href="#">生活亲情</a></li>
+                <li><a href="#">宅男腐女</a></li>
+                <li><a href="#">后宫漫画</a></li>
+                <li><a href="#">音乐舞蹈</a></li>
+            </ul>
+            <div class="clear"></div>
+            <ul class="footer_top_two">
+            	<li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+                <li><a href="#">I</a></li>
+                <li><a href="#">J</a></li>
+                <li><a href="#">K</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">N</a></li>
+                <li><a href="#">O</a></li>
+                <li><a href="#">P</a></li>
+                <li><a href="#">Q</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">U</a></li>
+                <li><a href="#">V</a></li>
+                <li><a href="#">W</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Y</a></li>
+                <li><a href="#">Z</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+    	<div class="content">
+        	<p>本站内容均来自于网络，仅提供试看，不提供下载，如您喜欢请支持正版</p>
+            <p>版权所有 2015-2017 manhuajia.cn 津ICP备09013255 联系我们：suggest@manhuajia.com 站长统计</p>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+</html>

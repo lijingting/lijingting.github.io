@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+.slider{ width:100%; margin-top:10px;}
+#main img{ width:100%;}
+
+#main h3{ border-bottom:2px dashed #F0F; padding-bottom:3px; margin-bottom:5px;}
+#main h3 a{ display:inline-block; color:#F0F; font-size:16px; margin-right:10px;}
+.main_left{ width:730px; float:left;}
+.main_left ul{ margin:15px 0;}
+.main_left ul li{ margin-bottom:15px;}
+.main_li_left{ width:18%; float:left;}
+.main_li_right{ width:80%; float:right;}
+.main_li_right h4{ font-size:20px; color:#000;}
+.main_li_right p{ font-size:13px; color:#424242; text-indent:28px; line-height:20px; margin-top:10px;}
+.main_li_right a{ display:inline-block; color:#191919; font-weight:bold; font-size:14px; float:right;}
+.main_li_right p a{ font-size:13px; font-weight:100; float:none;}
+
+.main_right{ width:250px; float:right; margin-top:5px;}
+.main_right_top .mores{ display:inline-block; width:100%; line-height:25px; text-align:center; font-size:16px; color:#fff; font-weight:bold; background:#6D6D6D; margin:5px 0; transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s;}
+.main_right_top .mores:hover{ background:#EBEBEB; color:#000;}
+.main_right_top h4{ font-size:18px; line-height:30px;}
+
+.main_right_top .huishi{ width:255px; margin-left:-5px;}
+.main_right_top .huishi li{ width:80px; margin-left:5px; float:left; margin-bottom:10px; margin-top:5px;}
+.main_right_top .huishi li span{ font-size:13px; text-align:center; width:100%; display:inline-block;}
+.main_right_top .juese li{ border-bottom:1px solid #333; margin-bottom:5px; padding-bottom:3px;}
+.main_right_top .juese li span{ margin-right:5px; display:inline-block; width:15px; text-align:center; line-height:15px; border:1px solid #464646;}
+.main_right_top .juese li a{ font-size:13px; color:#000;}
+.main_right_top .juese li em{ float:right; color:#363636;}
+
+
+.main_right_bottom img{ margin-top:5px;}
+.main_right_bottom h2{ line-height:30px; font-size:20px; margin-top:5px;}
+.main_right_bottom h3{ line-height:25px; font-size:15px;}
+.main_right_bottom p{ line-height:20px; font-size:13px; margin-top:5px; text-indent:28px;}
+.main_right_bottom .taolun{ float:right; padding:3px 8px; font-weight:bold; background:#4E4E4E; color:#fff; transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s;}
+.main_right_bottom .taolun:hover{ background:#fff; color:#4E4E4E;}
+.main_right_bottom h4{ font-size:13px; line-height:25px;}
+.main_right_bottom h4 span{ color:#919191; float:right;}
+.main_right_bottom ul li{ border-bottom:1px dashed #363636; padding-bottom:5px; margin-top:10px;}
+.main_right_bottom ul li h5{ font-size:14px;}
+.main_right_bottom ul li h5 a{ font-size:14px; color:#919191; margin-left:10px;}
+.main_right_bottom ul li h5 span{ font-size:13px; float:right;}
+.main_right_bottom ul li p{ margin-top:0; line-height:25px;}
+.main_right_bottom .more{ font-weight:bold; color:#000; transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s; padding:3px 10px; margin:3px 0; float:right;}
+.main_right_bottom .more:hover{ background:#535353; color:#fff;}
+ 
+ a {
+        color: #2B4A78;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #2B4A78;
+        text-decoration: underline;
+    }
+
+    a:focus, input:focus {
+        outline-style: none;
+        outline-width: medium;
+    }
+
+    /* custom css style: pageNum,cPageNum */
+    .pageNum {
+        border: 1px solid #999;
+        padding: 2px 8px;
+        display: inline-block;
+    }
+
+    .cPageNum {
+        font-weight: bold;
+        padding: 2px 5px;
+    }
+    #pageNav{
+        -moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+    }
+    #pageNav a:hover {
+        text-decoration: none;
+        background: #fff4d8;
+    }
+.fenye{ width:260px; margin:0 auto; margin-bottom:20px;}
+
+@media (min-width: 768px) and (max-width: 1050px)
+{
+.main_right{ display:none;}
+.main_left{ width:700px; float:none; margin:0 auto;}
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+.main_right{ display:none;}
+.main_left{ width:100%; float:none; margin:0 auto;}
+}
+
+@media (max-width: 479px)
+{
+.main_right{ width:100%; float:none; display:block;}
+.main_left{ width:100%; float:none; margin:0 auto;}
+
+.main_right_top .huishi{ width:100%; margin-left:0;}
+.main_right_top .huishi li{ width:30%; margin-left:5%; float:left;}
+.main_right_top .huishi li:first-child{ margin-left:0;}
+.main_right_top .huishi li:nth-child(4){ margin-left:0;}
+.main_right_top .huishi li:nth-child(7){ margin-left:0;}
+
+.main_li_left{ display:none;}
+.main_li_right{ width:100%; float:none;}
+}

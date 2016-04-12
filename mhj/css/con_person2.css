@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main{ margin:10px 0;}
+#main li{ margin-bottom:20px;}
+#main li .li_right a{ float:left; display:inline-block; width:180px; text-align:center; line-height:30px; border:4px solid #434343; border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px; margin-left:10px; margin-top:5px; color:#191919;}
+#main li .li_right a p{ color:#0080FF;}
+#main li .li_right a span{ font-size:13px;}
+
+a {
+        color: #2B4A78;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #2B4A78;
+        text-decoration: underline;
+    }
+
+    a:focus, input:focus {
+        outline-style: none;
+        outline-width: medium;
+    }
+
+    /* custom css style: pageNum,cPageNum */
+    .pageNum {
+        border: 1px solid #999;
+        padding: 2px 8px;
+        display: inline-block;
+    }
+
+    .cPageNum {
+        font-weight: bold;
+        padding: 2px 5px;
+    }
+    #pageNav{
+        -moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+    }
+    #pageNav a:hover {
+        text-decoration: none;
+        background: #fff4d8;
+    }
+.fenye{ width:260px; margin:0 auto; margin-bottom:20px; margin-top:10px;}
+
+@media (min-width: 768px) and (max-width: 1050px)
+{
+
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+
+}
+
+@media (max-width: 479px)
+{
+
+}

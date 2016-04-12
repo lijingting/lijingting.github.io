@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0; list-style:none; text-decoration:none; outline:none; box-sizing:content-box;}
+body{ color:#000; font-size:14px; font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif; background:url('../img/overlay.png') fixed repeat,url(../img/bg.png) -100px -200px fixed  no-repeat rgba(95,93,93,0.5); background-size:256px 256px cover;}
+img{ border:0;}
+.content{ width:1100px; margin:0 auto;}
+.clear{ clear:both;} 
+
+.compt{ width:859px; position:absolute; left:50%; margin-left:-430px; bottom:10px; height:506px; background:url(../img/compt.png) no-repeat;}
+.compt a{ display:block; position:relative; top:45px; left:165px; width:60px; padding-bottom:10px; transition:all 0.3s;}
+.compt a img{ width:40px; margin-left:10px;}
+.compt a:hover{ -webkit-transform:scale(1.2); -moz-transform:scale(1.2); -o-transform:scale(1.2); transform:scale(1.2);}
+.compt a p{ width:60px; text-align:center; color:#fff;}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main{ margin-top:10px;} 
+#main img{ width:100%;}
+#main li{ margin-bottom:20px;}
+.main_left{ width:100px; float:left; border:3px dashed #F0F; text-align:center; padding:10px 0; position:relative; bottom:10px; background:#fff; left:10px;}
+.main_left p{ line-height:25px;}
+.main_left span{ line-height:25px;}
+.main_right{ width:850px; float:right;}
+.main_right h2{ font-size:16px; color:#787878;}
+.main_right h2 .one{ display:inline-block; width:30px; line-height:30px; border:1px solid #F0F; color:#000;}
+.main_right h2 .two{ display:inline-block; color:#000; margin:0 10px;}
+.main_right p{ font-size:13px; line-height:20px; color:#787878;}
+
+
+@media (min-width: 768px) and (max-width: 1050px)
+{
+.main_left{ width:100px; float:left; border:3px dashed #F0F; text-align:center; padding:10px 0; position:relative; bottom:10px; background:#fff; left:10px;}
+.main_right{ width:550px; float:left; margin-left:30px;}
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+.main_left{ width:100px; float:left; border:3px dashed #F0F; text-align:center; padding:10px 0; position:relative; bottom:10px; background:#fff; left:10px;}
+.main_right{ width:250px; float:left; margin-left:30px;}
+}
+
+@media (max-width: 479px)
+{
+.main_left{ width:100px; float:none; border:3px dashed #F0F; text-align:center; padding:10px 0; position:relative; bottom:0; background:#fff; left:10px;}
+.main_right{ width:100%; float:none; margin-left:0; margin-top:10px;}
+}

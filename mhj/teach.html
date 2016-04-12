@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>漫画家网站</title>
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="css/content.css" rel="stylesheet" type="text/css"/>
+<link href="css/teach.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".button").click(function(){
+  $(".menu").toggle();
+  });
+});
+</script>
+
+<!--中文版-->
+<script type="text/javascript" src="js/pagenav1.1.cn.js"></script>
+<script type="text/javascript">
+
+//$(function(){ //for jquery
+window.onload = (function(){
+
+	//optional set
+	pageNav.pre="上一页";
+	pageNav.next="下一页";
+	
+
+	 //  p,当前页码,pn,总页面
+	pageNav.fn = function(p,pn){
+		document.getElementById("test").innerHTML ="当前页:"+p+"  ,  总页: "+pn;
+		//$("#test").text("Page:"+p+" of "+pn + " pages."); // jquery调用方式
+	};
+	
+	//重写分页状态,跳到第三页,总页33页
+	pageNav.go(3,5);
+
+});
+
+  </script>
+</head>
+
+<body>
+<div class="page">
+<header id="header">
+	<div class="content">
+		<div class="header_top">
+        	<ul>
+            	<li><a href="#">登录</a></li>
+                <li><a href="#">换肤</a></li>
+                <li><a href="#">我的观看记录</a></li>
+                <li><a href="#">支持漫画家</a></li>
+                <li><a href="#">个人中心</a></li>
+            </ul>
+            <div class="clear"></div>
+            <div class="header_top_con">
+            	<img src="img/logo.png" class="logo">
+                <img src="img/wenzi.png" class="wenzi">
+                <a href="#" class="chongzhi">点击充值</a>
+            </div>	
+            <div class="clear"></div>
+            <div class="header_top_bot">
+            	<p>漫画家共有6232部漫画供您欣赏 还在不断增加哦<span><a href="#">作品上传</a><a href="#">作者PRQ</a></span><div class="clear"></div></p>
+            </div>
+        </div>
+        <div class="header_bottom">
+        	<nav class="nav">
+            	<ul class="button">
+                	<li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="menu">
+                	<li><a href="index.html">首页</a></li>
+                    <li><a href="manhua.html">漫画</a></li>
+                    <li><a href="person.html">漫画家</a></li>
+                    <li><a href="cos.html">COS</a></li>
+                    <li><a href="huihua.html">绘画</a></li>
+                    <li><a href="teach.html" class="action">教程</a></li>
+                    <li><a href="huodong.html">活动</a></li>
+                    <li><a href="meitu.html">美图</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <form action="#" method="post" name="search" id="search">
+            	<input type="text" id="text">
+                <input type="button" id="but" value="搜索">
+            </form>	
+            <div class="clear"></div>
+        </div>
+    </div>
+</header>
+<div id="main">
+    <div class="content">
+        <div class="main_left">
+        	<img src="img/banner6.jpg" class="slider">
+            <ul>
+            	<li>
+                	<h3><a href="#">COS</a><a href="#">闲聊八卦</a></h3>
+                    <div class="main_li_left">
+                    	<a href="#"><img src="img/paihang1.jpg"></a>
+                    </div>
+                    <div class="main_li_right">
+                    	<h4>【国漫平面大赛】第二周微博人气奖获奖者——寒殇，专访</h4>
+                        <p>COS娘<span>1天前</span></p>
+                        <p>COS娘：寒殇先来做个简单的自我介绍吧~\(≧▽≦)/~寒殇：好哒！诶嘿～这里寒殇，一只一直在努力追梦的coser～入圈之后，cosplay给了我很多的正能量，所以自己也希望能多出一些好片子，给喜欢cos的小伙伴们带来快乐，把正能量传递下去～【这货真的有点紧张qwq都忘了应该怎么自我介绍orz COS娘：先要恭喜寒殇的这套【散片】爱丽丝疯狂回归<a href="#">http://bcy.net/coser/detail/21385/353534</a>   获得了【国漫平面大赛】本周微博人</p>
+                        <a href="#">阅读全文<< </a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                	<h3><a href="#">绘画</a><a href="#">教程手帖</a><a href="#">其他</a></h3>
+                    <div class="main_li_left">
+                    	<a href="#"><img src="img/paihang2.jpg"></a>
+                    </div>
+                    <div class="main_li_right">
+                    	<h4>现充情侣的服装绘制</h4>
+                        <p>Coooco<span>2天前</span></p>
+                        <p>#绘画参考# 绘师みき尾的现充服装绘制，配色到款式都很时髦哦♪~（´∀｀）原作者：みき尾转载自：<a href="#">http://www.pixiv.net/member_illust.php?mode=medium&illust_id=49580867 </a></p>
+                        <a href="#">阅读全文<< </a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                	<h3><a href="#">绘画</a><a href="#">教程手帖</a><a href="#">其他</a></h3>
+                    <div class="main_li_left">
+                    	<a href="#"><img src="img/paihang3.jpg"></a>
+                    </div>
+                    <div class="main_li_right">
+                    	<h4>手部动作的绘制</h4>
+                        <p>Coooco<span>3天前</span></p>
+                        <p>#绘画参考# ume的一组手部动作绘制，攻克手部误区和绘手要点，画萌妹纸必备哦~原作者：ume转载自：<a href="#">http://www.pixiv.net/member_illust.php?mode=medium&illust_id=50579404 </a> </p>
+                        <a href="#">阅读全文<< </a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                	<h3><a href="#">COS</a><a href="#">闲聊八卦</a></h3>
+                    <div class="main_li_left">
+                    	<a href="#"><img src="img/paihang4.jpg"></a>
+                    </div>
+                    <div class="main_li_right">
+                    	<h4>眼镜的画法和角度参考</h4>
+                        <p>COS娘<span>4天前</span></p>
+                        <p>#绘画参考# 眼镜的画法和角度参考，记住镜面是没有贴住面部的，来给你的本命戴上眼镜吧~原作者：kelpls、みずのえ转载自：<a href="#">kelpls.tumblr.com、http://www.pixiv.net/member_illust.php?mode=medium&illust_id=53316496 </a></p>
+                        <a href="#">阅读全文<< </a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                	<h3><a href="#">绘画</a><a href="#">教程手帖</a><a href="#">素材资源</a></h3>
+                    <div class="main_li_left">
+                    	<a href="#"><img src="img/paihang5.jpg"></a>
+                    </div>
+                    <div class="main_li_right">
+                    	<h4>多种花卉的线稿素材</h4>
+                        <p>COS<span>6天前</span></p>
+                        <p>#绘画参考# 沼田制作的杜鹃花、铃兰、山茶等多种花卉的线稿素材，可二次加工╭(′▽`)╯【下载地址戳】<a href="#">http://t.cn/RUVhzCg</a>原作者：沼田转载自：<a href="#">http://www.pixiv.net/member_illust.php?id=1422866</a></p>
+                        <a href="#">阅读全文<< </a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+            <div class="fenye">
+				<div id="pageNav"></div>
+            </div>
+        </div>
+        <div class="main_right">
+        	<div class="main_right_top">
+                <h4>专栏作者</h4>
+                <ul class="huishi">
+                	<li>
+                    	<a href="#"><img src="img/huishi4.png"></a>
+                        <span>玄小丢</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi2.png"></a>
+                        <span>霹雳布袋</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi3.png"></a>
+                        <span>instockoee</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi1.png"></a>
+                        <span>痴呆pk</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi5.jpg"></a>
+                        <span>白祈QSR</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi6.png"></a>
+                        <span>LLC修行中</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi7.png"></a>
+                        <span>NeMovO</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi8.png"></a>
+                        <span>NIGHT</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi2.png"></a>
+                        <span>清水哀哀</span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <a href="#" class="mores">查看更多</a>
+                <h4>最新投稿人</h4>
+                <ul class="huishi">
+                	<li>
+                    	<a href="#"><img src="img/huishi1.png"></a>
+                        <span>鱼鬼</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi2.png"></a>
+                        <span>Mconch</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi4.png"></a>
+                        <span>kaze233</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi3.png"></a>
+                        <span>Lao7</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi5.jpg"></a>
+                        <span>Catcan</span>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/huishi6.png"></a>
+                        <span>幻七樱</span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <a href="#" class="mores">查看更多</a>
+            </div>
+        	<div class="main_right_bottom">
+                <h2>读者热议</h2>
+                <img src="img/slider4.png" class="slider4">
+                <h3>【拜见女王陛下】主角超能力创意大赛</h3>
+                <p>在《拜见女王陛下》中，大家想让主角拥有什么样的超能力呢？</p>
+                <a href="#" class="taolun">参与讨论</a>
+                <div class="clear"></div>
+                <h4>用户回复<span>总回复量：1234</span></h4>
+                <ul>
+                	<li>
+                    	<h5>kissXsis<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>赞w(°ｏ°)w！！！！</p>
+                    </li>
+                    <li>
+                    	<h5>猪是的年过来倒<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>只要勤奋更新都是最好的。。。</p>
+                    </li>
+                    <li>
+                    	<h5>小裟箩呀<a href="#">回复</a><span>8-12 14:17</span></h5>
+                        <p>0 0企鹅吧1019854062</p>
+                    </li>
+                </ul>
+                <a href="#" class="more">更多讨论</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<footer id="footer">
+	<div class="footer_top">
+		<div class="content">
+        	<ul class="footer_top_one">
+            	<li><a href="#">爱情漫画</a></li>
+                <li><a href="#">冒险漫画</a></li>
+                <li><a href="#">校园漫画</a></li>
+                <li><a href="#">武侠格斗</a></li>
+                <li><a href="#">搞笑漫画</a></li>
+                <li><a href="#">侦探悬疑</a></li>
+                <li><a href="#">恐怖惊悚</a></li>
+                <li><a href="#">科幻机战</a></li>
+                <li><a href="#">竞技体育</a></li>
+                <li><a href="#">励志职场</a></li>
+                <li><a href="#">战争历史</a></li>
+                <li><a href="#">四格漫画</a></li>
+                <li><a href="#">生活亲情</a></li>
+                <li><a href="#">宅男腐女</a></li>
+                <li><a href="#">后宫漫画</a></li>
+                <li><a href="#">音乐舞蹈</a></li>
+            </ul>
+            <div class="clear"></div>
+            <ul class="footer_top_two">
+            	<li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+                <li><a href="#">I</a></li>
+                <li><a href="#">J</a></li>
+                <li><a href="#">K</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">N</a></li>
+                <li><a href="#">O</a></li>
+                <li><a href="#">P</a></li>
+                <li><a href="#">Q</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">U</a></li>
+                <li><a href="#">V</a></li>
+                <li><a href="#">W</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Y</a></li>
+                <li><a href="#">Z</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+    	<div class="content">
+        	<p>本站内容均来自于网络，仅提供试看，不提供下载，如您喜欢请支持正版</p>
+            <p>版权所有 2015-2017 manhuajia.cn 津ICP备09013255 联系我们：suggest@manhuajia.com 站长统计</p>
+        </div>
+    </div>
+</footer>
+</div>
+
+   				
+</body>
+</html>

@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main{ margin:10px 0;}
+#main h2{ text-align:center; line-height:50px; border-bottom:1px solid #585858;}
+.con_main_left{ width:15%; float:left;}
+.con_main_left img{ width:100%;}
+.con_main_right{ width:80%; float:right;}
+.title p{ text-align:center; line-height:30px; font-size:18px;}
+.title p a{ font-size:14px; color:#F0F;}
+.con_main ul li{ margin-bottom:20px}
+
+.con_main_right h3{ line-height:40px;}
+.con_main_right ul{ margin-top:20px;}
+#main .con_main_right li{ float:left; width:45%; margin-right:5%; line-height:25px; margin-bottom:0;}
+.con_main_right .little{ margin-top:20px; line-height:25px;}
+
+
+a {
+        color: #2B4A78;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #2B4A78;
+        text-decoration: underline;
+    }
+
+    a:focus, input:focus {
+        outline-style: none;
+        outline-width: medium;
+    }
+
+    /* custom css style: pageNum,cPageNum */
+    .pageNum {
+        border: 1px solid #999;
+        padding: 2px 8px;
+        display: inline-block;
+    }
+
+    .cPageNum {
+        font-weight: bold;
+        padding: 2px 5px;
+    }
+    #pageNav{
+        -moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+    }
+    #pageNav a:hover {
+        text-decoration: none;
+        background: #fff4d8;
+    }
+.fenye{ width:260px; margin:0 auto; margin-bottom:20px; margin-top:10px;}
+
+
+@media (min-width: 768px) and (max-width: 1050px)
+{
+.con_main_right .little{ margin-top:10px; line-height:25px;}
+.title p{ text-align:center; line-height:25px; font-size:18px;}
+.con_main_right h3{ line-height:30px;}
+.con_main_right ul{ margin-top:5px;}
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+.con_main_right .little{ margin-top:10px; line-height:25px;}
+.title p{ text-align:center; line-height:25px; font-size:18px;}
+.con_main_right h3{ line-height:30px; border-bottom:2px dashed #2E2E2E;}
+.con_main_right ul{ margin-top:5px;}
+.con_main_left img{ display:none;}
+.con_main_right{ width:100%; float:none;}
+}
+
+@media (max-width: 479px)
+{
+.con_main_right .little{ margin-top:10px; line-height:25px;}
+.title p{ text-align:center; line-height:25px; font-size:18px;}
+.con_main_right h3{ line-height:30px; border-bottom:2px dashed #2E2E2E;}
+.con_main_right ul{ margin-top:5px;}
+.con_main_left img{ display:none;}
+.con_main_right{ width:100%; float:none;}
+}

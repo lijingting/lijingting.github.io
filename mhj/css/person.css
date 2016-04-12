@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+#slider img{ width:100%;}
+#main{ padding-bottom:10px;}
+#main h3{ font-size:18px; border-bottom:1px dashed #373737; margin:10px 0;}
+#main h3 a{ float:right; font-size:15px; color:#5D5D5D;}
+
+#main img{ width:100%;}
+
+.main_left{ width:730px; float:left;}
+.main_one{ width:100%;}
+.main_one li{ width:48%; margin-left:4%; float:left; border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px; box-shadow:2px 2px 2px #333; -moz-box-shadow:2px 2px 2px #333; -ms-box-shadow:2px 2px 2px #333; -o-box-shadow:2px 2px 2px #333; -webkit-box-shadow:2px 2px 2px #333; margin-top:5px; margin-bottom:10px; padding-bottom:10px; padding-top:5px;}
+.main_one li:first-child{ margin-left:0;}
+.main_one li h4{ font-size:14px; margin-bottom:10px;}
+.main_one li h4 a{ float:right; color:#8A8A8A;}
+.main_one li p{ line-height:25px; border-bottom:1px dashed #000; margin-bottom:5px; font-size:13px;}
+.main_one li p .main_one_right{ float:right; color:#8A8A8A; margin-right:5px;}
+.main_one li p span{ color:#F0F; margin-left:8px;}
+.main_one li p a{ color:#000;}
+
+.main_two li{ float:left; width:22%; margin-left:4%; margin-top:10px; margin-bottom:10px;}
+.main_two li:first-child{ margin-left:0;}
+.main_two li:nth-child(5){ margin-left:0;}
+.main_two h5{ font-size:14px;}
+.main_two p{ font-size:13px; color:#6D6D6D; line-height:25px;}
+
+.main_three{ width:750px; margin-left:-20px;}
+.main_three li{ width:230px; margin-left:20px; float:left; margin-top:5px; margin-bottom:5px;}
+.main_three li h6{ font-size:14px; line-height:30px;}
+.main_three li h6 a{ float:right;}
+.main_three li p{ line-height:25px; font-size:13px;}
+.main_three li p a{ font-size:13px; display:inline-block; color:#000;}
+.main_three li p span{ float:right; color:#6D6D6D;}
+
+
+
+
+
+.main_right{ width:250px; float:right; margin-top:5px;}
+.main_right_top .mores{ display:inline-block; width:100%; line-height:25px; text-align:center; font-size:16px; color:#fff; font-weight:bold; background:#6D6D6D; margin:5px 0; transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s;}
+.main_right_top .mores:hover{ background:#EBEBEB; color:#000;}
+.main_right_top h4{ font-size:18px; line-height:30px;}
+
+.main_right_top .huishi{ width:255px; margin-left:-5px;}
+.main_right_top .huishi li{ width:80px; margin-left:5px; float:left; margin-bottom:10px; margin-top:5px;}
+.main_right_top .huishi li span{ font-size:13px; text-align:center; width:100%; display:inline-block;}
+.main_right_top .juese li{ border-bottom:1px solid #333; margin-bottom:5px; padding-bottom:3px;}
+.main_right_top .juese li span{ margin-right:5px; display:inline-block; width:15px; text-align:center; line-height:15px; border:1px solid #464646;}
+.main_right_top .juese li a{ font-size:13px; color:#000;}
+.main_right_top .juese li em{ float:right; color:#363636;}
+
+
+.main_right_bottom img{ margin-top:5px;}
+.main_right_bottom h2{ line-height:30px; font-size:20px; margin-top:5px;}
+.main_right_bottom h3{ line-height:25px; font-size:15px;}
+.main_right_bottom p{ line-height:20px; font-size:13px; margin-top:5px; text-indent:28px;}
+.main_right_bottom .taolun{ float:right; padding:3px 8px; font-weight:bold; background:#4E4E4E; color:#fff; transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s;}
+.main_right_bottom .taolun:hover{ background:#fff; color:#4E4E4E;}
+.main_right_bottom h4{ font-size:13px; line-height:25px;}
+.main_right_bottom h4 span{ color:#919191; float:right;}
+.main_right_bottom ul li{ border-bottom:1px dashed #363636; padding-bottom:5px; margin-top:10px;}
+.main_right_bottom ul li h5{ font-size:14px;}
+.main_right_bottom ul li h5 a{ font-size:14px; color:#919191; margin-left:10px;}
+.main_right_bottom ul li h5 span{ font-size:13px; float:right;}
+.main_right_bottom ul li p{ margin-top:0; line-height:25px;}
+.main_right_bottom .more{ font-weight:bold; color:#000; transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s; padding:3px 10px; margin:3px 0; float:right;}
+.main_right_bottom .more:hover{ background:#535353; color:#fff;}
+
+
+@media (min-width: 768px) and (max-width: 1050px)
+{
+.main_right{ display:none;}
+.main_left{ width:700px; float:none; margin:0 auto;}
+#slider img{ width:700px; position:relative; left:50%; margin-left:-350px;}
+.main_three{ width:700px; margin-left:0;}
+.main_three li{ width:30%; margin-left:5%; float:left; margin-top:5px; margin-bottom:5px;}
+.main_three li:first-child{ margin-left:0;}
+.main_three li:nth-child(4){ margin-left:0;}
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+.main_right{ display:none;}
+.main_left{ width:100%; float:none; margin:0 auto;}
+.main_one li{ width:100%; margin-left:0; float:none;}
+
+.main_two li{ float:left; width:45%; margin-left:10%; margin-top:10px; margin-bottom:10px;}
+.main_two li:first-child{ margin-left:0;}
+.main_two li:nth-child(3){ margin-left:0;}
+.main_two li:nth-child(5){ margin-left:0;}
+.main_two li:nth-child(7){ margin-left:0;}
+
+.main_three{ width:100%; margin-left:0;}
+.main_three li{ width:100%; margin-left:0; float:none; margin-top:5px; margin-bottom:5px;}
+}
+
+@media (max-width: 479px)
+{
+.main_right{ width:100%; float:none; display:block;}
+.main_left{ width:100%; float:none; margin:0 auto;}
+
+.main_one li{ width:100%; margin-left:0; float:none;}
+.main_two li{ float:left; width:45%; margin-left:10%; margin-top:10px; margin-bottom:10px;}
+.main_two li:first-child{ margin-left:0;}
+.main_two li:nth-child(3){ margin-left:0;}
+.main_two li:nth-child(5){ margin-left:0;}
+.main_two li:nth-child(7){ margin-left:0;}
+
+.main_three{ width:100%; margin-left:0;}
+.main_three li{ width:100%; margin-left:0; float:none; margin-top:5px; margin-bottom:5px;}
+
+.main_right_top .huishi{ width:100%; margin-left:0;}
+.main_right_top .huishi li{ width:30%; margin-left:5%; float:left;}
+.main_right_top .huishi li:first-child{ margin-left:0;}
+.main_right_top .huishi li:nth-child(4){ margin-left:0;}
+.main_right_top .huishi li:nth-child(7){ margin-left:0;}
+}

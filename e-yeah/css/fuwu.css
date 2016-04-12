@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+h6{ text-align:center; font-size:60px; padding-top:80px; margin-bottom:15px; color:#00A3FF;}
+.two{ margin:25px 0;}
+.title{ text-align:center; line-height:30px;}
+.title h3{ font-size:25px;}
+.title p{ font-size:15px; color:#777777; margin-top:10px;}
+.two ul{ width:1125px; margin-left:-25px;}
+.two ul li{ float:left; width:350px; margin-left:25px; height:250px; border-top:3px solid #0093FF; padding:10px 0; background:#f5f5f5; margin-top:20px; position:relative;}
+.li_top a img{ transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s;}
+.li_top a:hover img{ transform:scale(1.2); -moz-transform:scale(1.2); -ms-transform:scale(1.2); -o-transform:scale(1.2); -webkit-transform:scale(1.2);}
+.li_top .li_top_left{ float:left; width:250px;}
+.li_top .li_top_left h4 a{ display:inline-block; color:#575757; font-size:18px; margin-left:5px; margin-top:10px; transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s;}
+.li_top .li_top_left h4 a:hover{ color:#FF888A; transform:scale(1.2); -moz-transform:scale(1.2); -ms-transform:scale(1.2); -o-transform:scale(1.2); -webkit-transform:scale(1.2);}
+.li_top .li_top_left p{ font-size:13px; line-height:23px; margin-left:5px; margin-top:10px; color:#848484;}
+.li_top img{ float:right; width:80px;}
+.li_bottom{ margin-top:25px;}
+.li_bottom img{ position:absolute; bottom:10px; right:10px;}
+.li_bottom p{ line-height:20px; margin-left:5px; margin-top:10px;}
+
+
+.three{ padding-bottom:50px; padding-top:25px;}
+.three ul{ width:1120px; margin-left:-20px;}
+.three ul li{ float:left; width:260px; margin-left:20px; text-align:center; margin-top:20px;}
+.three ul li a{ transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s;}
+.three ul li a:hover{ transform:scale(1.2); -moz-transform:scale(1.2); -ms-transform:scale(1.2); -o-transform:scale(1.2); -webkit-transform:scale(1.2);}
+.three ul li a img{ transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s;}
+.three ul li a:hover img{ transform:scale(1.2); -moz-transform:scale(1.2); -ms-transform:scale(1.2); -o-transform:scale(1.2); -webkit-transform:scale(1.2);}
+.three ul li h4 a{ display:inline-block; font-size:16px; color:#000; line-height:25px;}
+.three ul li h4 a:hover{ color:#FF888A;}
+.three ul li p{ color:13px; line-height:23px; color:#8E8E8E; margin-top:10px;}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1100px)
+{
+.two ul{ width:750px; position:relative; left:50%; margin-left:-400px;}
+.two ul li{ float:left; width:350px; margin-left:25px; height:250px; border-top:3px solid #0093FF; }
+
+.three ul{ width:560px; position:relative; left:50%; margin-left:-300px;}
+.three ul li{ float:left; width:260px; margin-left:20px; text-align:center; margin-top:20px;}
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+.two ul{ width:350px; position:relative; left:50%; margin-left:-175px;}
+.two ul li{ float:left; width:350px; margin-left:0; text-align:left; height:250px; border-top:3px solid #0093FF; }
+
+.three ul{ width:450px; position:relative; left:50%; margin-left:-230px;}
+.three ul li{ float:left; width:220px; margin-left:5px; text-align:center; margin-top:20px;}
+h6{ text-align:center; font-size:50px; padding-top:80px; margin-bottom:15px; color:#00A3FF;}
+}
+
+@media (max-width: 479px)
+{
+.two ul{ width:310px; position:relative; left:50%; margin-left:-155px;}
+.two ul li{ float:left; width:310px; margin-left:0; height:250px; text-align:left; border-top:3px solid #0093FF; }
+.li_top .li_top_left{ float:left; width:230px;}
+.li_top img{ float:right; width:70px;}
+.three ul{ width:260px; position:relative; left:50%; margin-left:-130px;}
+.three ul li{ float:left; width:260px; margin-left:0; text-align:center; margin-top:20px;}
+h6{ text-align:center; font-size:40px; padding-top:80px; margin-bottom:15px; color:#00A3FF;}
+}

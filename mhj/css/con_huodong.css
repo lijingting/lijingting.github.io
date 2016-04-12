@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main{ margin:10px 0;}
+#main img{ width:100%;}
+#main h3{ font-size:18px; line-height:35px;}
+#main h4{ font-size:16px; line-height:30px;}
+#main h5{ font-size:14px; font-weight:100; line-height:20px;}
+.main_con{ margin-top:25px;}
+.main_con p{ font-size:13px; line-height:25px;}
+.main_con p a{ color:#F0F;}
+.main_con p a:hover{ color:#585858;}
+.but{ margin-bottom:25px; margin-top:10px;}
+.but a{ display:inline-block; width:120px; text-align:center; line-height:30px; background:#F0F; color:#fff; margin-right:10px; border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px; transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; -webkit-transition:all 0.8s;}
+.but a:hover{ background:#585858;}
+
